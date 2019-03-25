@@ -1,1 +1,3 @@
 - Webshop -> Artikel in DB, zugriff über frontend HTML, Managen über Backend Java
+- Budgettracker -> Ausgaben im Monat
+- Git -> https://benhoyt.com/writings/pygit/
