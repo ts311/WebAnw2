@@ -1,0 +1,1 @@
+- Webshop -> Artikel in DB, zugriff über frontend HTML, Managen über Backend Java
