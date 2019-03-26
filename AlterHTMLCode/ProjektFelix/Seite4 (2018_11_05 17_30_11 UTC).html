@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Kontakt</title>
+</head>
+<body>
+	<div class="navbar">
+  <a href="Hauptseite.html">Destiny 2</a>
+  <a href="Seite1.html">Die Klassen</a>
+  <a href="Seite2.html">Die Raids</a>
+  <div class="dropdown">
+    <button class="dropbtn">Mehr 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Seite3.html">News</a>
+      <a href="Seite4.html">Kontakt</a>
+    </div>
+	</div> 
+	</div>
+	<div class="box">
+	<center><h1> Kontaktieren Sie uns </h1></center><br>
+	<p> Falls Sie fragen oder anregungen haben können Sie uns über das untenstehende Formular jeder Zeit kontaktieren.</p>
+	<p> Bitte achten Sie darauf, dass alle Felder korrekt ausgefüllt sind. <p><br>
+	<form action="Submit.html" method="get" onsubmit='return checkForm();'>
+	<table style="width:0%" id="table">
+	<tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+	<tr><td>Nachname:</td> <td><input type="text" name="nachname"></td></tr>
+	<tr><td>E-Mail:</td> <td><input type="email" name="email"></td></tr>
+	<tr><td>Mitteilung:</td> <td><textarea name="nachricht" rows="7" cols="30">Ihre Nachricht</textarea></td></tr>
+	<tr><td></td><td><input type="submit" value="Absenden"></td></tr> 
+	</form>
+	</div>
+	<script>
+	function checkForm(){
+	var strFehler='';
+
+	if (document.forms[0].name.value=="")
+
+		strFehler += "\n Feld Name ist leer";
+
+	if (document.forms[0].nachname.value=="")
+
+		strFehler += "\n Feld Nachname ist leer";
+	
+	if (document.forms[0].email.value=="")
+
+		strFehler += "\n Feld Email ist leer";
+		
+	if (document.forms[0].nachricht.value=="Ihre Nachricht")
+
+		strFehler += "\n Feld Nachricht ist nicht korrekt ausgefüllt";
+
+	if (strFehler.length>0) {
+
+		alert("Warnung: \n"+strFehler);
+
+		return(false);
+
+}
+}
+</script>
+</body>
+</html> 
