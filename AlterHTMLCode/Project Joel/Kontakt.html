@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-zoom=1.0" />
+    <title>Kontakt</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Pictures/Browsericon.png" type="image/png" />
+    <link rel="icon" href="Pictures/Browsericon.png" type="image/png" />
+</head>
+
+<body>
+    <div class="top"></div>
+    <img src="Pictures/Lago.jpg" width="100%"/>
+    <header>
+        <nav class="nav1">
+            <div class="logo"><a href="Index.html">Website</a></div>
+            <div class="container menuicon" onclick="menuchange(this)">
+                    <div class="bar1 menuicon"></div>
+                    <div class="bar2 menuicon"></div>
+                    <div class="bar3 menuicon"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Equipment.html">Equipment</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a class="active" href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section1">
+        <div>
+            <h2>Kontakt</h2>
+            <h3>Allgemeine Anfrage</h3>
+        </div>
+        <div>
+            <p>Sie haben eine allgemeine Anfrage, Lob oder Kritik? Wir freuen uns von Ihnen zu hören!</p>
+        </div>
+    </section>
+    <section class="section1">
+        <form>
+            <table>
+                <tr>
+                    <td>Anrede *</td>
+                    <td class="d30"></td>
+                    <td>Firma</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="box1" name="Anrede"  required>
+                            <option value="Herr">Herr</option>
+                            <option value="Frau">Frau</option>
+                        </select>
+                    </td>
+                    <td class="d30"></td>
+                    <td><input class="box1" type="text" name="Firma"/></td>
+                </tr>
+                <tr>
+                    <td>Vorname *</td>
+                    <td class="d30"></td>
+                    <td>Nachname *</td>
+                </tr>
+                <tr>
+                    <td><input class="box1" type="text" name="Vorname" required/></td>
+                    <td class="d30"></td>
+                    <td><input class="box1" type="text" name="Nachname" required/></td>
+                </tr>
+                <tr>
+                    <td>Email *</td>
+                    <td class="d30"></td>
+                    <td>Handy</td>
+                </tr>
+                <tr>
+                    <td><input class="box1" type="email" name="Email" required/></td>
+                    <td class="d30"></td>
+                    <td><input class="box1" type="text" name="Handy"/></td>
+                </tr>
+                <tr>
+                    <td>Anfrage</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><textarea class="box1" name="Anfrage" rows="10"></textarea></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="Datenschutz" value="Datenschutz" required/></td>
+                    <td colspan="2">Ich habe die Datenschutzerklärung gelesen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.*</td>
+                </tr>
+                <tr><td class="d30"></td></tr>
+                <tr>
+                    <td colspan="3">* Pflichtfeld</td>
+                </tr>
+            </table>
+            <input class="bes right" type="submit" value="Senden"/>
+        </form>
+    </section>  
+    
+    <footer>Copyright 2018 &copy; Joel Wielath   made in Germany</footer>
+
+    <script>
+        function menuchange(x) {
+        x.classList.toggle("change");
+        document.getElementById("menu").classList.toggle("chang");
+        }        
+    </script>
+</body>
+</html>

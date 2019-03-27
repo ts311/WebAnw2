@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-zoom=1.0" />
+    <title>Galerie</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Pictures/Browsericon.png" type="image/png" />
+    <link rel="icon" href="Pictures/Browsericon.png" type="image/png" />
+</head>
+
+<body>
+    <div class="top"></div>
+    <img src="Pictures/Lago.jpg" width="100%"/>
+    <header>
+        <nav class="nav1">
+            <div class="logo"><a href="Index.html">Websites</a></div>
+            <div class="container menuicon" onclick="menuchange(this)">
+                    <div class="bar1 menuicon"></div>
+                    <div class="bar2 menuicon"></div>
+                    <div class="bar3 menuicon"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Equipment.html">Equipment</a></li>
+                <li><a class="active" href="Galerie.html">Galerie</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <article class="article1">
+        <h2>Galerie</h2>
+    </article>
+    <section class="section1">
+        <div class="galerie">
+            <div class="divp"><a href="Pictures/Galerie/2.jpg"><img src="Pictures/Galerie/small-2.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/11.jpg"><img src="Pictures/Galerie/small-11.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/5.jpg"><img src="Pictures/Galerie/small-5.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/1.jpg"><img src="Pictures/Galerie/small-1.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/3.jpg"><img src="Pictures/Galerie/small-3.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/4.jpg"><img src="Pictures/Galerie/small-4.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/10.jpg"><img src="Pictures/Galerie/small-10.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/6.jpg"><img src="Pictures/Galerie/small-6.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/8.jpg"><img src="Pictures/Galerie/small-8.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/7.jpg"><img src="Pictures/Galerie/small-7.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/12.jpeg"><img src="Pictures/Galerie/small-12.jpg" class="pic1"/></a></div>
+            <div class="divp"><a href="Pictures/Galerie/9.jpg"><img src="Pictures/Galerie/small-9.jpg" class="pic1"/></a></div>
+        </div>
+    </section>
+    <footer>Copyright 2018 &copy; Joel Wielath   made in Germany</footer>
+
+    <script>
+        function menuchange(x) {
+        x.classList.toggle("change");
+        document.getElementById("menu").classList.toggle("chang");
+        }        
+    </script>
+</body>
+</html>

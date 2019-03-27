@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-zoom=1.0" />
+    <title>Equipment</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Pictures/Browsericon.png" type="image/png" />
+    <link rel="icon" href="Pictures/Browsericon.png" type="image/png" />
+</head>
+
+<body>
+    <div class="top"></div>
+    <img src="Pictures/Lago.jpg" width="100%"/>
+    <header>
+        <nav class="nav1">
+            <div class="logo"><a href="Index.html">Website</a></div>
+            <div class="container menuicon" onclick="menuchange(this)">
+                    <div class="bar1 menuicon"></div>
+                    <div class="bar2 menuicon"></div>
+                    <div class="bar3 menuicon"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a class="active" href="Equipment.html">Equipment</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="article1">
+        <p>Hallo zusammen</p>
+    </article>
+    <section class="section1 clearfix">
+       <a href="https://www.nikon.de/de_DE/product/digital-cameras/slr/consumer/d5300" target="blank"><div class="divx divp"><img src="Pictures/Cam.jpg" class="pic1"/></div></a>
+       <a href="https://www.nikon.de/de_DE/product/nikkor-lenses/auto-focus-lenses/dx/single-focal-length/af-s-dx-nikkor-35mm-f-1-8g" target="blank"><div class="divx divp"><img src="Pictures/Nikon35.jpg" class="pic1"/></div></a>
+       <a href="https://www.nikon.de/de_DE/product/nikkor-lenses/auto-focus-lenses/dx/zoom/af-s-dx-nikkor-18-105mm-f-3-5-5-6g-ed-vr" target="blank"><div class="divx divp"><img src="Pictures/Nikon18_105.jpg" class="pic1"/></div></a>
+       <a href="https://www.sigma-foto.de/index.php?id=789" target="blank"><div class="divx divp"><img src="Pictures/Sigma70_200.jpg" class="pic1"/></div></a>
+       <a href="https://www.amazon.de/Manfrotto-MT190XPRO4-Aluminium-Stativ-Segmenten/dp/B00FZLBVBG" target="blank"><div class="divx divp"><img src="Pictures/Manfrotto190.jpg" class="pic1"/></div></a>
+       <a href="https://www.manfrotto.de/xpro-kugelkopf-aus-magnesium-mit-200pl-schnellwechselplatte" target="blank"><div class="divx divp"><img src="Pictures/ManfrottoKopf.jpg" class="pic1"/></div></a>
+       <a href="https://www.foto-morgen.de/PHOREX-by-jaworskyj-Graufilter-ND-Filter/" target="blank"><div class="divx divp"><img src="Pictures/Nd.jpg" class="pic1"/></div></a>
+       <a href="https://www.foto-morgen.de/Objektive-Filter-Zubehoer/Filter/PHOREX-CPL-Polfilter-77mm-by-Jaworskyj.html" target="blank"><div class="divx divp"><img src="Pictures/Pol.jpg" class="pic1"/></div></a>
+    </section>
+    <footer>Copyright 2018 &copy; Joel Wielath   made in Germany</footer>
+
+    <script>
+        function menuchange(x) {
+        x.classList.toggle("change");
+        document.getElementById("menu").classList.toggle("chang");
+        }        
+    </script>
+</body>
+</html>
