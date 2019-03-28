@@ -8,3 +8,6 @@ bis Montag: <br>
 https://www.sqlite.org/features.html <br>
 Sprache: Englisch <br>
 IDE: IntelliJ Ultimate <br>
+<br><br>
+
+Copyrightfreie Bilder:  https://pixabay.com/de/
