@@ -1,0 +1,7 @@
+1. Woche: Business Plan, Mockup/Wireframe
+3. Woche: Statischer Prototyp
+Umsetzung dynamische Version
+-Frontend	2 Wochen
+-Backend	2 Wochen
+-Datenbank	2 Wochen
+Finalisierung	1 Woche
