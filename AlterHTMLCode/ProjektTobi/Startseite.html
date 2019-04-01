@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="stylestartseite.css" type="text/css"/>
+		<title> Starthomepage </title>
+</head>
+<body>
+
+ <div class="topnav" id="myTopnav">
+  <a href="Startseite.html" class="active">Home</a>
+  <a href="Ernährung.html" target="_blank">Ernährung</a> 
+  <a href="Pläne.html" target="_blank">Pläne</a>
+  <a href="Tools.html" target="_blank">Tools</a>
+  <a href="Verletzung.html" target="_blank">Verletzung</a>
+  <a href="Kontaktformular.html" target="_blank">Kontakt</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+	<header>
+		<h1>Get-Fit...</h1>
+	</header>
+
+	<a href="Ernährung.html" class="box" target="_blank">
+	  <h2><span>...und ACHTE auf deine...</span></h2>
+	  <h2>Ernährung</h2>
+	</a>
+	
+	<a href="Pläne.html" class="box" target="_blank">
+	  <h2><span>...und STYLE deine...</span></h2>
+	  <h2>Pläne</h2>
+	</a>
+	
+	<a href="Tools.html" class="box" target="_blank">
+	  <h2><span>...und benutze RICHTIGES...</span></h2>
+	  <h2>Equipment</h2>
+	</a>
+	
+	<a href="Verletzung.html" class="box" target="_blank">
+	  <h2><span>...und bleibe OHNE...</span></h2>
+	  <h2>Verletzungen</h2>
+	</a>
+	
+	<footer>
+		<p color ="yellow">&copy von Tobias Schlauch</p>
+		<p><a href="Kontaktformulartest.html" target="_blank">Kontakt</a></p>
+	</footer>
+</body>
+</html>
