@@ -1,0 +1,13 @@
+/*size for the logo*/
+img#logo {
+  width: 50%; 
+  height: auto;
+}
+table {
+	/*
+	border: 1px solid black;
+}
+th {
+	/*doesn't work*/	
+	width: 33%;
+}
