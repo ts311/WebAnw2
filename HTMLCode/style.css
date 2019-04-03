@@ -22,18 +22,25 @@
 } 
 
 
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
 
 
 /*size for the logo*/
 img#logo {
-  width: 50%; 
+  width: 40%; 
   height: auto;
 }
 table {
 	/* make a border lol*/
-	border: 1px solid black;
+	width:100%;
+	border: 1px solid black
 }
-th {
-	/*doesn't work*/	
-	width: 33%;
+td {
+	width:33%;
+	text-align:center;
 }
