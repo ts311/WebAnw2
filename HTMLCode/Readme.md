@@ -1,2 +1,4 @@
 # Report Bugs/ToDo here for next contributor: <br>
-	- Objects in the top table need same distance
+	- Fix Header
+	- Make Footer
+	- Theres a bug where the driver-dropdown apears when hovering on the Navbar
