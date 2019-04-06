@@ -48,7 +48,7 @@ body {
 
 /* Hintergrund der Dropdown Links */
 .dropdown-content a:hover {
-  background-color: gold;
+  background-color: #ddd;
 }
 
 /* Dropdown anzeigen */
@@ -64,15 +64,22 @@ body {
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 20px; 
+.dropdown .dropbtn { 
+  font-size: 16px;
   border: none;
   outline: none;
-  color: black;
+  color: #f2f2f2;
   padding: 14px 16px;
-  background-color: #f2f2f2;  /*Farbe Navbar*/
+  background-color: #333;  /*Farbe Navbar*/
   font-family: sansserif; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropbtn:hover {
+    background-color:#ddd;
+    color:black;
+}
+a#kont {
+    float:right;
 }
 
 /* Style the header */
