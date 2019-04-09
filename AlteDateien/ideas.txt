@@ -1,5 +1,6 @@
-- Webshop -> Artikel in DB, zugriff über frontend HTML, Managen über Backend Java
+﻿- Webshop -> Artikel in DB, zugriff über frontend HTML, Managen über Backend Java
 - Budgettracker -> Ausgaben im Monat
 - Bibliothek ausleihe
 - Git -> https://benhoyt.com/writings/pygit/
 - Suchmaschine -> https://stories.algolia.com/a-search-engine-in-css-b5ec4e902e97
+jölasdlfj

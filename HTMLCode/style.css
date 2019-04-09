@@ -101,6 +101,20 @@ table {
 	border: 1px solid black
 }
 td {
+  text-align: center;
+}
+.headertd {
 	width:33%;
-	text-align:center;
+}
+.prodPic {
+  width: 20%;
+}
+.pic1 {
+  max-width: 50%;
+}
+.detlPic {
+  width: 20%;
+}
+.pic2 {
+  width: 100%;
 }
