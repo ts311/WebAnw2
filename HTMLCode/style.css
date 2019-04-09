@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    color: black;
 }
 
 /*NAVBAR*/
@@ -90,13 +91,23 @@ a#kont {
 }
 
 
+
+/*table on card*/
+table#car {
+    width: 30%;
+    height: auto;
+}
+/*table on card*/
+.cart {
+    border: 1px solid black;
+}
 /*size for the logo*/
 img#logo {
   width: 40%; 
   height: auto;
 }
 table {
-	/* make a border lol*/
+	/* make a border*/
 	width:100%;
 	border: 1px solid black
 }
