@@ -1,0 +1,85 @@
+<html>
+<head> <link rel="stylesheet" type="text/css" href="style.css" media="screen" /></head>
+<body>
+
+    <!-- Header -->
+	<div class="header">
+	<!-- table for the top: logo, searchbar, card -->	
+	<table>
+      <tr>
+        <td class="headertd"><img src="Logo/Logo3.png" id="logo"></td>
+        <td class="headertd"><input type=text name="searchbar" placeholder="search"/></td>
+        <td class="headertd"><input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/></td>
+      </tr>
+	</table>
+	</div>
+    <br>
+<!-- Navbar -->	
+<div class="topnav">
+  <a href="Products.html">Prozessoren</a>
+  <a href="Products.html">Grafikkarten</a>
+  <a href="Products.html">Arbeitsspeicher</a>
+  <a href="Kontakt.html" id="kont">Kontakt</a>
+    
+    <div class="dropdown">
+    <button class="dropbtn">Festplatten
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Products.html">SSDs</a>
+      <a href="Products.html">HDDs</a>
+      </div>
+    </div>
+</div>
+
+<div>
+    <h1>AMD Ryzen 2600x</h1>
+    <table>
+        <tr>
+            <td rowspan="3" class="detlPic"><img src="Pictures/AMD_Ryzen_2600x.jpg" class="pic2"/></td>
+            <td>Preis: 189,99€</td>
+            <td>Anzahl: <input type="number" value="1" min="1" max="5"/></td>
+        </tr>
+        <tr>
+            <td>Bewertungsanzeige</td>
+            <td><input type="checkbox" value="oneDayDelivery"/>Lieferung am selben Tag</td>
+        </tr>
+        <tr>
+            <td>Anderes Zeugs</td>
+            <td><input type="button" value="In den Einkaufswagen" onclick="window.location.href='card.html';"/></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Prozessor</td>
+            <td>AMD Ryzen 2600x</td>
+        </tr>
+        <tr>
+            <td>Anzahl Kerne/Threads</td>
+            <td>6/12</td>
+        </tr>
+        <tr>
+            <td>Takt/Turbo</td>
+            <td>3.60Ghz/4.20GHz</td>
+        </tr>
+        <tr>
+            <td>Sockel</td>
+            <td>AM4</td>
+        </tr>
+        <tr>
+            <td>TDP</td>
+            <td>95 Watt</td>
+        </tr>
+        <tr>
+            <td>L2 Cache</td>
+            <td>3MB</td>
+        </tr>
+        <tr>
+            <td>L3 Cache</td>
+            <td>16MB</td>
+        </tr>
+    </table>
+</div>
+
+
+</html>
