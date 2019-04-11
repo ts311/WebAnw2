@@ -89,6 +89,9 @@ a#kont {
   padding: 20px;
   text-align: center;
 }
+.headertd {
+	width:33%;
+}
 
 
 
@@ -114,21 +117,45 @@ table {
 td {
   text-align: center;
 }
-.headertd {
-	width:33%;
-}
+/*picture size on Products*/
 .prodPic {
   width: 20%;
 }
-.pic1 {
-  max-width: 50%;
-}
+/*picture size on Details*/
 .detlPic {
   width: 20%;
 }
-.pic2 {
+.a5 {
+  width: 5%;
+}
+.a10 {
+  width: 10%;
+}
+.a20 {
+  width: 20%;
+}
+.a50 {
+  width: 50%;
+}
+.a80 {
+  width: 80%;
+}
+.a100 {
   width: 100%;
 }
+
 .content {
   color: black;
+}
+/*striped table*/
+.table-striped>tbody>tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.left {
+  float: left;
+}
+/*links on table*/
+td>a {
+  color: black;
+  text-decoration: none;
 }
