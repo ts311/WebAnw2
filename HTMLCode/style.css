@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    color: black;
 }
 
 /* Style the header */
@@ -149,6 +150,51 @@ td {
     color:black;
 }
 
+<<<<<<< HEAD
 a#kont {
     float: right;
 }
+=======
+
+
+/*table on card*/
+table#car {
+    width: 30%;
+    height: auto;
+}
+/*table on card*/
+.cart {
+    border: 1px solid black;
+}
+/*size for the logo*/
+img#logo {
+  width: 40%; 
+  height: auto;
+}
+table {
+	/* make a border*/
+	width:100%;
+	border: 1px solid black
+}
+td {
+  text-align: center;
+}
+.headertd {
+	width:33%;
+}
+.prodPic {
+  width: 20%;
+}
+.pic1 {
+  max-width: 50%;
+}
+.detlPic {
+  width: 20%;
+}
+.pic2 {
+  width: 100%;
+}
+.content {
+  color: black;
+}
+>>>>>>> 142f6a022338ad63ff4f9d6aa1919ecd828c16a3
