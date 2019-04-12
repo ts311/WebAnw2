@@ -1,119 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-zoom=1.0" />
-    <title>Kontakt</title>
-    <link href="stylealt.css" type="text/css" rel="stylesheet" />
-    <link rel="shortcut icon" href="Pictures/Browsericon.png" type="image/png" />
-    <link rel="icon" href="Pictures/Browsericon.png" type="image/png" />
-</head>
-
+<!doctype html>
+<html lang="de">
+<head> <link rel="stylesheet" type="text/css" href="style.css" media="screen" /></head>
 <body>
-     <!-- Header -->
-	<div class="header">
-		<!-- table for the top: logo, searchbar, card -->	
-		<table>
-				<tr>
-					<td class="headertd"><img src="Logo/Logo3.png" id="logo"></td>
-					<td class="headertd"><input type=text name="searchbar" placeholder="search"/></td>
-					<td class="headertd"><input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/></td>
-				</tr>
-		</table>
-		</div>
-			<br>
-	<!-- Navbar -->	
-	<div class="topnav">
-		<a href="Products.html">Prozessoren</a>
-		<a href="Products.html">Grafikkarten</a>
-		<a href="Products.html">Arbeitsspeicher</a>
-		<a href="Kontakt.html" id="kont">Kontakt</a>
-			
-			<div class="dropdown">
-			<button class="dropbtn">Festplatten
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-				<a href="Products.html">SSDs</a>
-				<a href="Products.html">HDDs</a>
-				</div>
-			</div>
-	</div>
-    <section class="section1">
-        <div>
-            <h2>Kontakt</h2>
-            <h3>Allgemeine Anfrage</h3>
-        </div>
-        <div>
-            <p>Sie haben eine allgemeine Anfrage, Lob oder Kritik? Wir freuen uns von Ihnen zu hören!</p>
-        </div>
-    </section>
-    <section class="section1">
-        <form>
-            <table>
-                <tr>
-                    <td>Anrede *</td>
-                    <td class="d30"></td>
-                    <td>Firma</td>
-                </tr>
-                <tr>
-                    <td>
-                        <select class="box1" name="Anrede"  required>
-                            <option value="Herr">Herr</option>
-                            <option value="Frau">Frau</option>
-                        </select>
-                    </td>
-                    <td class="d30"></td>
-                    <td><input class="box1" type="text" name="Firma"/></td>
-                </tr>
-                <tr>
-                    <td>Vorname *</td>
-                    <td class="d30"></td>
-                    <td>Nachname *</td>
-                </tr>
-                <tr>
-                    <td><input class="box1" type="text" name="Vorname" required/></td>
-                    <td class="d30"></td>
-                    <td><input class="box1" type="text" name="Nachname" required/></td>
-                </tr>
-                <tr>
-                    <td>Email *</td>
-                    <td class="d30"></td>
-                    <td>Handy</td>
-                </tr>
-                <tr>
-                    <td><input class="box1" type="email" name="Email" required/></td>
-                    <td class="d30"></td>
-                    <td><input class="box1" type="text" name="Handy"/></td>
-                </tr>
-                <tr>
-                    <td>Anfrage</td>
-                </tr>
-                <tr>
-                    <td colspan="3"><textarea class="box1" name="Anfrage" rows="10"></textarea></td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td><input type="checkbox" name="Datenschutz" value="Datenschutz" required/></td>
-                    <td colspan="2">Ich habe die Datenschutzerklärung gelesen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.*</td>
-                </tr>
-                <tr><td class="d30"></td></tr>
-                <tr>
-                    <td colspan="3">* Pflichtfeld</td>
-                </tr>
-            </table>
-            <input class="bes right" type="submit" value="Senden"/>
-        </form>
-    </section>  
-    
-    <footer>Copyright 2018 &copy; Joel Wielath   made in Germany</footer>
 
-    <script>
-        function menuchange(x) {
-        x.classList.toggle("change");
-        document.getElementById("menu").classList.toggle("chang");
-        }        
-    </script>
+    <!-- Header -->
+	<div class="header">
+	<!-- table for the top: logo, searchbar, card -->	
+	<table>
+      <tr>
+        <td class="headertd"><img src="Logo/Logo3.png" id="logo"></td>
+        <td class="headertd"><input type=text name="searchbar" placeholder="search"/></td>
+        <td class="headertd"><input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/></td>
+      </tr>
+	</table>
+	</div>
+    <br>
+<!-- Navbar -->	
+<div class="topnav">
+  <a href="Products.html">Prozessoren</a>
+  <a href="Products.html">Grafikkarten</a>
+  <a href="Products.html">Arbeitsspeicher</a>
+  <a href="Kontakt.html" id="kont">Kontakt</a>
+    
+    <div class="dropdown">
+    <button class="dropbtn">Festplatten
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Products.html">SSDs</a>
+      <a href="Products.html">HDDs</a>
+      </div>
+    </div>
+</div>
+	<center><h1> Kontaktieren Sie uns </h1></center><br>
+	<p> Falls Sie fragen oder anregungen haben können Sie uns über das untenstehende Formular jeder Zeit kontaktieren.</p>
+	<p> Bitte achten Sie darauf, dass alle Felder korrekt ausgefüllt sind. <p><br>
+	<form action="submit.html" method="get" onsubmit='return checkForm();'>
+	<table style="width:0%" id="table">
+	<tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+	<tr><td>Nachname:</td> <td><input type="text" name="nachname"></td></tr>
+	<tr><td>E-Mail:</td> <td><input type="email" name="email"></td></tr>
+	<tr><td>Mitteilung:</td> <td><textarea name="nachricht" rows="7" cols="30">Ihre Nachricht</textarea></td></tr>
+	<tr><td></td><td><input type="submit" value="Absenden"></td></tr> 
+	</form>
+	</div>
+	<script>
+	function checkForm(){
+	var strFehler='';
+	if (document.forms[0].name.value=="")
+		strFehler += "\n Feld Name ist leer";
+	if (document.forms[0].nachname.value=="")
+		strFehler += "\n Feld Nachname ist leer";
+	
+	if (document.forms[0].email.value=="")
+		strFehler += "\n Feld Email ist leer";
+		
+	if (document.forms[0].nachricht.value=="Ihre Nachricht")
+		strFehler += "\n Feld Nachricht ist nicht korrekt ausgefüllt";
+	if (strFehler.length>0) {
+		alert("Warnung: \n"+strFehler);
+		return(false);
+}
+}
+</script>
 </body>
-</html>
+</html> 
