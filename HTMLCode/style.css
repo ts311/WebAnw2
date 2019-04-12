@@ -3,6 +3,71 @@ body {
     color: black;
 }
 
+/* Style the header */
+.header {
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+}
+
+/*size for the logo*/
+img#logo {
+  width: 50%; 
+  height: auto;
+}
+
+img#logoeinkaufswagen{
+    width: 20%;
+    height: auto;
+}   
+
+table {
+	/* make a border lol*/
+    
+    border: none;
+}
+
+td {
+  text-align: center;
+  border: none;
+}
+
+
+.headertl {
+    text-align: left;
+    width: 20%;
+}
+
+.headerts{
+    width:auto;
+}
+
+.headerte{
+	width: 22%;
+    display:right;
+    
+}
+
+#searchbar{
+    width: 100%;
+}
+
+.prodPic {
+  width: 20%;
+}
+
+.pic1 {
+  max-width: 50%;
+}
+
+.detlPic {
+  width: 20%;
+}
+
+.pic2 {
+  width: 100%;
+}
+
 /*NAVBAR*/
  /* The navbar container */
 .topnav {
@@ -25,6 +90,7 @@ body {
   background-color: #ddd;
   color: black;
 } 
+
 /* Dropdown content */
 .dropdown-content {
   display: none;
@@ -48,20 +114,23 @@ body {
 }
 
 /* Hintergrund der Dropdown Links */
+
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Dropdown anzeigen */
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 
 /* Navbar Dropdown */
+
 .dropdown {
-  /*float: right;*/
-  overflow: hidden;
+  float: left;
+  /*overflow: hidden;*/
 }
 
 /* Dropdown button */
@@ -75,13 +144,12 @@ body {
   font-family: sansserif; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
+
 .dropbtn:hover {
     background-color:#ddd;
     color:black;
 }
-a#kont {
-    float:right;
-}
+
 
 /* Style the header */
 .header {
@@ -95,6 +163,11 @@ a#kont {
 .contentbody {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+
+a#kont {
+    float: right;
 }
 
 
@@ -155,6 +228,7 @@ td {
 .content {
   color: black;
 }
+
 /*striped table*/
 .table-striped>tbody>tr:nth-child(even) {
   background-color: rgb(85, 158, 255);
@@ -174,3 +248,4 @@ td>a {
 .star {
   width: 100px;
 }
+
