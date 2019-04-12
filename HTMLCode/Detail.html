@@ -32,20 +32,20 @@
     </div>
 </div>
 
-<div>
-    <h1>AMD Ryzen 2600x</h1>
-    <div class="left a20">
-        <img src="Pictures/AMD_Ryzen_2600x.jpg" class="a100"/>
+<div class="contentbody">
+    <h1>AMD Ryzen 2600X</h1>
+    <div class="left a50">
+        <img src="Pictures/AMD_Ryzen_2600x.jpg" class="detlPic"/>
     </div>
-    <div class="left a80">
+    <div class="left a50">
     <table>
         <tr>
             <td>Preis: 189,99€</td>
             <td>Anzahl: <input type="number" value="1" min="1" max="5"/></td>
         </tr>
         <tr>
-            <td><img src="Pictures/4-Sterne.png" class="a10"/><br>4,2 Sterne</td>
-            <td><input type="checkbox" value="oneDayDelivery"/>Lieferung am selben Tag</td>
+            <td><img src="Pictures/4-Sterne.png" class="star"/><br>4,2 Sterne</td>
+            <td><input type="checkbox" value="oneDayDelivery"/>Versandkostenfrei</td>
         </tr>
         <tr>
             <td>Lagernd: >5 Stück</td>
@@ -53,10 +53,16 @@
         </tr>
     </table>
     </div>
-    <table class="table-striped">
+    <div class="contentbody">
+    <div>
+        <div class="a33">Beschreibung</div>
+        <div class="a33">Technische Details</div>
+        <div class="a33">Bewertung</div>
+    </div>
+    <table class="table-striped table-detail">
         <tr>
             <td>Prozessor</td>
-            <td>AMD Ryzen 2600x</td>
+            <td>AMD Ryzen 2600X</td>
         </tr>
         <tr>
             <td>Anzahl Kerne/Threads</td>
@@ -87,13 +93,21 @@
 <div>
     <h2>Bewertungen</h2>
     <div>
-        <img src="Pictures/4-Sterne.png" class="a5"/>Verifizierter Kauf<br><p>Schnelle Lieferung, Neu und ungeöffnet. Kann mich nicht beschweren.<br>Der CPU selbst läuft auch super</p>
+        <img src="Pictures/4-Sterne.png" class="star"/>Verifizierter Kauf<br><p>Schnelle Lieferung, Neu und ungeöffnet. Kann mich nicht beschweren.<br>Der CPU selbst läuft auch super</p>
     </div>
     <div>
-        <img src="Pictures/5-Sterne.png" class="a5"/>Verifizierter Kauf<br>
+        <img src="Pictures/5-Sterne.png" class="star"/>Verifizierter Kauf<br>
         <p>Auch von mir eine klare Empfehlung. Über den Kühler kann ich nichts sagen, in einem Computerladen vor Ort habe ich für wenig Geld den Wraith Max erstanden und der kühlt sehr gut und ist sehr leise 
             | wenn überhaupt hörbar.<br>AMD ist wieder voll konkurrenzfähig und preisgünstig und die AM4-Plattform auch für künftige Modelle nutzbar.<br>Darum ohne Einschränkung 5 Sterne!</p>
     </div>
+    <div>
+        <h4>Bewertung abgeben:</h4>
+        <textarea name="bewertung" rows="7" cols="30" placeholder="Ihre Bewertung"></textarea>
+    </div>
+    <div>    
+        Anzahl Sterne: <input type="number" value="1" min="1" max="5"/>
+    </div>
 </div>
-
+</div>
+</body>
 </html>
