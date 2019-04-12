@@ -2,6 +2,71 @@ body {
     background-color: white;
 }
 
+/* Style the header */
+.header {
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+}
+
+/*size for the logo*/
+img#logo {
+  width: 50%; 
+  height: auto;
+}
+
+img#logoeinkaufswagen{
+    width: 20%;
+    height: auto;
+}   
+
+table {
+	/* make a border lol*/
+    
+    border: none;
+}
+
+td {
+  text-align: center;
+  border: none;
+}
+
+
+.headertl {
+    text-align: left;
+    width: 20%;
+}
+
+.headerts{
+    width:auto;
+}
+
+.headerte{
+	width: 22%;
+    display:right;
+    
+}
+
+#searchbar{
+    width: 100%;
+}
+
+.prodPic {
+  width: 20%;
+}
+
+.pic1 {
+  max-width: 50%;
+}
+
+.detlPic {
+  width: 20%;
+}
+
+.pic2 {
+  width: 100%;
+}
+
 /*NAVBAR*/
  /* The navbar container */
 .topnav {
@@ -24,6 +89,7 @@ body {
   background-color: #ddd;
   color: black;
 } 
+
 /* Dropdown content */
 .dropdown-content {
   display: none;
@@ -62,8 +128,8 @@ body {
 /* Navbar Dropdown */
 
 .dropdown {
-  /*float: right;*/
-  overflow: hidden;
+  float: left;
+  /*overflow: hidden;*/
 }
 
 /* Dropdown button */
@@ -84,65 +150,5 @@ body {
 }
 
 a#kont {
-    float:right;
-}
-
-/* Style the header */
-.header {
-  background-color: grey;
-  padding: 20px;
-  text-align: center;
-}
-
-
-/*size for the logo*/
-img#logo {
-  width: 40%; 
-  height: auto;
-}
-
-img#logoeinkaufswagen{
-    width: 20%;
-    height: auto;
-}   
-
-table {
-	/* make a border lol*/
-	width:100%;
-    border: none;
-}
-
-td {
-  text-align: center;
-}
-
-
-.headertl {
-    text-align: left;
-	width: 33%;
-}
-
-.headerts{
-    width: 44%;
-    
-}
-
-.headerte{
-	width: 33%;
-}
-
-.prodPic {
-  width: 20%;
-}
-
-.pic1 {
-  max-width: 50%;
-}
-
-.detlPic {
-  width: 20%;
-}
-
-.pic2 {
-  width: 100%;
+    float: right;
 }
