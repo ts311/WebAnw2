@@ -150,11 +150,26 @@ td {
     color:black;
 }
 
-<<<<<<< HEAD
+
+/* Style the header */
+.header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+.headertd {
+	width:33%;
+}
+.contentbody {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
 a#kont {
     float: right;
 }
-=======
+
 
 
 /*table on card*/
@@ -174,27 +189,63 @@ img#logo {
 table {
 	/* make a border*/
 	width:100%;
-	border: 1px solid black
 }
 td {
   text-align: center;
+  padding: 10px;
 }
-.headertd {
-	width:33%;
-}
+/*picture size on Products*/
 .prodPic {
   width: 20%;
 }
-.pic1 {
-  max-width: 50%;
-}
+/*picture size on Details*/
 .detlPic {
+  width: 50%;
+  text-align: center;
+}
+.a5 {
+  width: 5%;
+}
+.a10 {
+  width: 10%;
+}
+.a20 {
   width: 20%;
 }
-.pic2 {
+.a33 {
+  width: 33%;
+}
+.a50 {
+  width: 50%;
+}
+.a80 {
+  width: 80%;
+}
+.a100 {
   width: 100%;
 }
+
 .content {
   color: black;
 }
->>>>>>> 142f6a022338ad63ff4f9d6aa1919ecd828c16a3
+
+/*striped table*/
+.table-striped>tbody>tr:nth-child(even) {
+  background-color: rgb(85, 158, 255);
+}
+/*.table-detail {
+  border: 3px solid rgb(85, 158, 255);
+  border-radius: 5px;
+}*/
+.left {
+  float: left;
+}
+/*links on table*/
+td>a {
+  color: black;
+  text-decoration: none;
+}
+.star {
+  width: 100px;
+}
+
