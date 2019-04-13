@@ -14,8 +14,8 @@ img#logo {
     padding: 30px;
 }
 /*tryed to let 1 link in navbar float right... didnt work*/
-.floatright {
-    text-align: right !important;
+.pull-right {
+    float: right !important;
 }
 a#kont {
     float: right;
@@ -105,8 +105,12 @@ body {
   margin-right: 5%;
 }
 .content {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+  padding-top: 3%;
+}
+.star {
+  width: 100px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
