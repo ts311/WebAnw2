@@ -23,8 +23,8 @@ a#kont {
 /*!*/
 /*color of Navbar*/
 .primary-color {
-    background-color: rgb(45, 195, 255);
-    background-color: rgb(255, 255, 98);
+    background-color: rgb(25, 153, 204);
+    background-color: rgb(241, 241, 47);
 }
 
 /* GLOBAL STYLES
@@ -94,6 +94,20 @@ body {
   letter-spacing: -1px;
 }
 
+/*Detail Content
+-----------------------------------------------------*/
+
+/*Detail Picture*/
+
+.detlPic {
+  width: 50%;
+  float: left;
+  margin-right: 5%;
+}
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

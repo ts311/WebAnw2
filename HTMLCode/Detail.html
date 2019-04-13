@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Syles.css" media="screen" />
     <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
-    <!-- Das neueste kompilierte und minimierte CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Das neueste kompilierte und minimierte CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Optionales Theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-</head>
-<body>
-
-    <!-- Header -->
-	<div class="header">
-	<!-- table for the top: logo, searchbar, card -->	
-	<table>
-      <tr>
-        <td class="headertd"><img src="Logo/Logo3.png" id="logo"></td>
-        <td class="headertd"><input type=text name="searchbar" placeholder="search"/></td>
-        <td class="headertd"><input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/></td>
-      </tr>
-	</table>
-	</div>
-    <br>
-<!-- Navbar -->	
-<div class="topnav">
-  <a href="Products.html">Prozessoren</a>
-  <a href="Products.html">Grafikkarten</a>
-  <a href="Products.html">Arbeitsspeicher</a>
-  <a href="Kontakt.html" id="kont">Kontakt</a>
     
-    <div class="dropdown">
-    <button class="dropbtn">Festplatten
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Products.html">SSDs</a>
-      <a href="Products.html">HDDs</a>
-      </div>
-    </div>
-</div>
+    <!-- Das neueste kompilierte und minimierte JavaScript
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
 
-<div class="contentbody">
-    <h1>AMD Ryzen 2600X</h1>
-    <div class="left a50">
-        <img src="Pictures/AMD_Ryzen_2600x.jpg" class="detlPic"/>
+</head>
+<body>	
+    <!-- Header -->
+	<div class="container-fluid headerbg">
+	   <!-- table for the top: logo, searchbar, card -->
+        <div class="row">
+	        <div class="col-md-4">
+                <img src="Logo/Logo3.png" id="logo">
+            </div>
+            <div class="col-md-4">
+                <input type=text name="searchbar" placeholder="search"/>
+            </div>
+            <div class="col-md-4">
+                <input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/>
+            </div>
+        </div>
     </div>
-    <div class="left a50">
-    <table>
-        <tr>
-            <td>Preis: 189,99€</td>
-            <td>Anzahl: <input type="number" value="1" min="1" max="5"/></td>
-        </tr>
-        <tr>
-            <td><img src="Pictures/4-Sterne.png" class="star"/><br>4,2 Sterne</td>
-            <td><input type="checkbox" value="oneDayDelivery"/>Versandkostenfrei</td>
-        </tr>
-        <tr>
-            <td>Lagernd: >5 Stück</td>
-            <td><input type="button" value="In den Einkaufswagen" onclick="window.location.href='card.html';"/></td>
-        </tr>
-    </table>
+    
+<!-- Navbar -->	
+<nav class="navbar navbar-expand-sm sticky-top primary-color">
+  <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-default" aria-label="Links ausrichten">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+</button>
+</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Prozessoren</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Arbeitsspecher</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Festplatten</a>
+    </li>
+    </ul>
+  <!--<ul class="nav navbar-nav navbar-right">-->
+    <ul class="navbar-nav floatright">
+    <li class="nav-item">
+      <a class="nav-link" href="Kontakt.html">Kontakt</a>
+  </li>
+  </ul>
+</nav>
+<!-- !Navbar -->
+    
+<!-- Content -->
+<div class="container-fluid content">
+    <h1>AMD Ryzen 2600X</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="Pictures/AMD_Ryzen_2600x.jpg" class="detlPic"/>
+        </div>
+        <div class="col-lg-4">
+            <table>
+                <tr>
+                    <td>Preis: 189,99€</td>
+                    <td>Anzahl: <input type="number" value="1" min="1" max="5"/></td>
+                </tr>
+                <tr>
+                    <td><img src="Pictures/4-Sterne.png" class="star"/><br>4,2 Sterne</td>
+                    <td><input type="checkbox" value="oneDayDelivery"/>Versandkostenfrei</td>
+                </tr>
+                <tr>
+                    <td>Lagernd: >5 Stück</td>
+                    <td><input type="button" value="In den Einkaufswagen" onclick="window.location.href='card.html';"/></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="contentbody">
     <div>
@@ -67,7 +93,7 @@
         <div class="a33">Technische Details</div>
         <div class="a33">Bewertung</div>
     </div>
-    <table class="table-striped table-detail">
+    <table class="table table-striped table-dark">
         <tr>
             <td>Prozessor</td>
             <td>AMD Ryzen 2600X</td>
@@ -117,6 +143,91 @@
     </div>
 </div>
 </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 primary-color">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
 </body>
 </html>
