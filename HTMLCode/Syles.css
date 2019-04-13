@@ -1,3 +1,9 @@
+/*body background*/
+body {
+    background-color: lightgray !important;
+    padding: 10px;
+}
+
 /*for changing color of links in navbar*/
 a {
     color:black !important;
@@ -20,7 +26,7 @@ img#logo {
 a#kont {
     float: right;
 }
-/*!*/
+/*!float right*/
 /*color of Navbar*/
 .primary-color {
     background-color: rgb(25, 153, 204);
@@ -52,7 +58,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: lightgray;
 }
 .carousel-inner > .item > img {
   position: absolute;
