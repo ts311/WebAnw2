@@ -10,7 +10,7 @@
 
 /*body background*/
 body {
-    background-color: lightgray !important;
+    /*background-color: lightgray !important;*/
     padding: 12px;
 }
 
@@ -134,13 +134,15 @@ body {
   padding-right: 15% !important;
   padding-top: 3%;
 }
-.margin {
+.margin-b-50 {
   margin-bottom: 50px;
 }
-.clearfix {
-  overflow: auto;
+.margin-t-150 {
+  margin-top: 150px;
 }
-
+.height-100 {
+  height: 100px;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -196,4 +198,12 @@ body {
 .pic{
     width: 50%;
     
+}
+
+/*FOOTER
+-----------------------------------------------------*/
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
