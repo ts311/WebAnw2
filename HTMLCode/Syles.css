@@ -157,9 +157,16 @@ body {
 
 /*PRODUCT PAGE
 -------------------------------------------------- */
+.pad{
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
 
-img#productimg {
-  width: 30%;
-  float: left;
-  margin-right: 5%;
+.pic{
+    
+    width: 40%;
+    
 }
