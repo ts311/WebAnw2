@@ -1,76 +1,172 @@
+<!DOCTYPE html>
 <html>
-<head> <link rel="stylesheet" type="text/css" href="style.css" media="screen" /></head>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Syles.css" media="screen" />
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
+    <!-- Das neueste kompilierte und minimierte CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+    <!-- Das neueste kompilierte und minimierte JavaScript
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+</head>
+
 <body>	
     <!-- Header -->
-	<div class="header">
-	<!-- table for the top: logo, searchbar, card -->	
-	<table>
-	    <tr>
-		<td class="headertl"><img src="Logo/Logo3.png" id="logo"></td>
-		<td class="headerts"><input type=text name="searchbar" placeholder="Suche"/></td>
-		<td class="headertd"><input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/></td>
-	    </tr>
-	</table>
-	</div>
-    <br>
-<!-- Navbar -->	
-<div class="topnav">
-  <a href="Products.html">Prozessoren</a>
-  <a href="Products.html">Grafikkarten</a>
-  <a href="Products.html">Arbeitsspeicher</a>
-  <a href="Kontakt.html" id="kont">Kontakt</a>
+	<div class="container-fluid headerbg">
+	   <!-- table for the top: logo, searchbar, card -->
+        <div class="row">
+	        <div class="col-md-4">
+                <img src="Logo/Logo3.png" id="logo">
+            </div>
+            <div class="col-md-4">
+                <input type=text name="searchbar" placeholder="search"/>
+            </div>
+            <div class="col-md-4">
+                <input type=button value="Einkaufswagen" onclick="window.location.href='card.html';"/>
+            </div>
+        </div>
+    </div>
     
-    <div class="dropdown">
-    <button class="dropbtn">Festplatten
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Products.html">SSDs</a>
-      <a href="Products.html">HDDs</a>
+<!-- Navbar -->	
+<nav class="navbar navbar-expand-sm sticky-top primary-color">
+  <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-default" aria-label="Links ausrichten">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+</button>
+</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Prozessoren</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Arbeitsspecher</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Festplatten</a>
+    </li>
+    </ul>
+  <!--<ul class="nav navbar-nav navbar-right">-->
+    <ul class="navbar-nav floatright">
+    <li class="nav-item">
+      <a class="nav-link" href="Kontakt.html">Kontakt</a>
+  </li>
+  </ul>
+</nav>
+<!-- !Navbar -->    
+
+<!--Produktliste-->
+<div class="container">
+    <table class="table" style="100%">
+        <thead>
+            <tr>
+                <th>Produktvorschau</th>
+                <th>Produktbeschreibung</th>
+            </tr>
+        </thead>
+            
+            <tr>
+                <td><img src="Pictures/AMD_Athlon_200GE.jpg" id="productimg"/> </td>
+                <td><h4>AMD Athlon 200GE</h4><br>200EUR<br> </td>
+            </tr>
+        
+            <tr>
+                <td><img src="Pictures/AMD_Athlon_200GE.jpg" id="productimg"/> </td>
+                <td><h4>AMD Athlon 200GE</h4><br>200EUR<br> </td>
+            </tr>
+        
+
+    
+</div>    
+<!--Produktliste-->   
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 primary-color">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Hardware Electronics</h5>
+          <p>Besuchen Sie auch unsere social Media Seiten.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Social Media</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="http://www.facebook.de">Facebook</a>
+              </li>
+              <li>
+                <a href="http://www.Twitter.de">Twitter</a>
+              </li>
+              <li>
+                <a href="http://www.instagram.de">Instagram</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Über uns</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="http://www.google.de">Impressum</a>
+              </li>
+              <li>
+                <a href="http://www.google.de">Datenschutzerklärung</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
       </div>
+      <!-- Grid row -->
+
     </div>
-  <!--
-  <div class="dropdown">    
-    <div class="dropdown-content">
-        <a href="#P">SSDs</a>
-        <a href="#P">HDDs</a>  
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="http://google.de"> HardwareElectronics.com</a>
     </div>
-  </div>
-  <a href="#P">Kontakt</a>-->
-</div>
-<div class="content">
-    <h1>Prozessoren</h1>
-    <table>
-        <tr>
-            <td class="prodPic"><img src="Pictures/AMD_Ryzen_2600.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/AMD_Ryzen_2700X.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/AMD_Ryzen_2600x.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/AMD_Ryzen_2400G.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/AMD_Ryzen_2200G.jpg" class="pic1"/></td>
-        </tr>
-        <tr>
-            <td>AMD Ryzen 5 2600<br>147,90€</td>
-            <td>AMD Ryzen 7 2700X<br>299,90€</td>
-            <td>AMD Ryzen 5 2600X<br>188,90€</td>
-            <td>AMD Ryzen 5 2400G<br>125,90€</td>
-            <td>AMD Ryzen 3 2200G<br>84,90€</td>
-        </tr>
-        <tr>
-            <td class="prodPic"><img src="Pictures/Intel_Core_i9_9900K.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/Intel_Core_i7_9700K.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/Intel_Core_i5_9600K.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/Intel_Core_i3_8100.jpg" class="pic1"/></td>
-            <td class="prodPic"><img src="Pictures/Intel_Core_i7_8700.jpg" class="pic1"/></td>
-        </tr>
-        <tr>
-            <td>Intel Core i9 9900K<br>516,90€</td>
-            <td>Intel Core i7 9700K<br>418,90€</td>
-            <td>Intel Core i5 9600K<br>260,90€</td>
-            <td>Intel Core i3 8100<br>141,90€</td>
-            <td>Intel Core i7 8700<br>318,90€</td>
-        </tr>
-    </table>
-</div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+    
 </body>
 
 </html>
