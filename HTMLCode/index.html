@@ -17,8 +17,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
 
+    
 </head>
 <body>	
     <!-- Header -->
@@ -64,87 +64,49 @@
 <!-- !Navbar -->
     
 <!-- Content -->
-    <div class="container-fluid">
-        
-         <!-- Karussell-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Positionsanzeige -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Erste Folie">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Beispiel-Überschrift.</h1>
-              <p>Hinweis: Falls du diese Seite über eine <code>file://</code>-URL anzeigst, werden die Glyphicon-Buttons für das nächste und vorherige Objekt links und rechts unter Umständen aufgrund von Browser-Sicherheitsregeln nicht vernünftig geladen/angezeigt.</p>
-              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Melde dich noch heute an</a></p>-->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Zweite Folie">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Noch eine Beispiel-Überschrift.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Mehr erfahren</a></p>-->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Dritte Folie">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Aller guten Dinge sind drei.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Galerie erkunden</a></p>-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Zurück</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Weiter</span>
-      </a>
-    </div>
-    <!-- /.carousel -->
+   <!-- <div class="container-fluid"> -->
 
+     <!-- carousel
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators --
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides --
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="Pictures/AMD_Ryzen_1300X.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="Pictures/AMD_Ryzen_1600X.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="Pictures/AMD_Ryzen_1800X.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls --
+  <a class="left carousel-control" href="myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <!-- /.carousel -->
 
     <!-- Marketing-Botschaften und Präsentationsspalten -->
     <!-- Der Rest der Seite wird in einem anderen Container verpackt, um den Inhalt schön zu zentrieren. -->
 
     <div class="container marketing">
-
-      <!-- Drei Spalten Text unter dem Karussell -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generisches Platzhalter-Bild" width="140" height="140">
-          <h2>Überschrift</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generisches Platzhalter-Bild" width="140" height="140">
-          <h2>Überschrift</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generisches Platzhalter-Bild" width="140" height="140">
-          <h2>Überschrift</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
+        
 
       <!-- Präsentationsspalten -->
 
@@ -152,41 +114,65 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Tolle Überschrift. <span class="text-muted">Es wird dir den Verstand rauben.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Kostenloser Versand! <span class="text-muted">Bei jeder Bestellung über 50€.</span></h2>
+          <p class="lead">Bei uns wird jede Bestellung über 50€ kostenlos und schnellstmöglich zugestellt. Das gilt sowohl für Deutschland, Österreich und die Schweiz!</p>
         </div>
-        <div class="col-md-5">
+        <!--<div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generisches Platzhalter-Bild">
-        </div>
+        </div>-->
       </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh ja, es ist SO gut. <span class="text-muted">Sieh es dir selbst an.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Lieferung am nächsten Tag! <span class="text-muted">Mit Hardware Prime</span></h2>
+          <p class="lead">
+            Melden Sie sich jetzt für unser premium Programm an für Lieferungen am nächsten Tag. Hinweis: Nur gültig bei Bestellung und Lieferung an Werktagen.</p>
         </div>
-        <div class="col-md-5 col-md-pull-7">
+        <!--<div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generisches Platzhalter-Bild">
-        </div>
+        </div>-->
       </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Und zum Schluss gibt es noch dies hier. <span class="text-muted">Schachmatt.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Unzufrieden? <span class="text-muted">Schicken Sie ihr Produkt kostenlos zurück!</span></h2>
+          <p class="lead">Kundenzufriedenheit wird bei uns groß geschrieben! Wenn Sie mit einem unserer Produkte unzufrieden sind, senden Sie es inerhalb der ersten 2 Wochen kostenlos zurück und erhalten ihr Geld wieder!</p>
         </div>
-        <div class="col-md-5">
+        <!--<div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generisches Platzhalter-Bild">
-        </div>
+        </div>-->
       </div>
 
       <hr class="featurette-divider">
 
     </div>
+    
+    <!-- Drei Spalten Text unter dem Karussell -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="Pictures/paypal-784404_1280.png" alt="Generisches Platzhalter-Bild" width="140" height="140">
+          <h2>Paypal</h2>
+          <p>Bezahlen Sie blitzschnell und bequem mit Paypal. Außerdem haben Sie den Paypal käuferschutz für zusätzliche Sicherheit. Paypal ist außerdem völlig kostenlos und sicher.</p>
+          <p><a class="btn btn-default" href="https://paypal.com" role="button">Erfahren Sie mehr &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="Pictures/bitcoin-225080_1280.png" alt="Generisches Platzhalter-Bild" width="140" height="140">
+          <h2>Bitcoin</h2>
+          <p>Sie sind zukunftsorientiert und begeistert von Kryptowährungen? Kein problem, Hardware Electronics nimmt auch Bitcoin als zahlungsmittel an.</p>
+          <p><a class="btn btn-default" href="https://www.bitcoin.de/de" role="button">Mehr dazu? &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="Pictures/card-1673581_1280.png" alt="Generisches Platzhalter-Bild" width="140" height="140">
+          <h2>Kreditkarte</h2>
+          <p>Falls Sie es ganz klassisch lieber haben, können Sie bei uns auch mit einer ganz normalen Kreditkarte bezahen.</p>
+          <p><a class="btn btn-default" href="https://www.sparkasse.de/unsere-loesungen/privatkunden/karten/kreditkarte.html" role="button">Weitere Infos  &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    
 <!-- !Content -->
 
 <!-- Footer -->
@@ -263,6 +249,6 @@
 
   </footer>
   <!-- Footer -->
-
+    
 </body>
 </html>
