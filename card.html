@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head> 
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Syles.css" media="screen" />
@@ -21,15 +20,6 @@
     
 
 </head>
-
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
-    <!-- Das neueste kompilierte und minimierte CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Optionales Theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-</head>
-
 <body>	
     <!-- Header -->
 	<div class="container-fluid headerbg">
@@ -71,35 +61,124 @@
   </li>
   </ul>
 </nav>
-<!-- !Navbar -->    
-
-<!--Produktliste-->
+<!-- !Navbar -->
+    
+<!--Table -->
+   
 <div class="container">
-    <table class="table" style="100%">
+    <h2>Ihr Einkaufswagen</h2>    
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th>Produktvorschau</th>
-                <th>Produktbeschreibung</th>
+                <th>Position</th>
+                <th>Produkt</th>
+                <th>Stückzahl</th>
+                <th>Preis</th>
             </tr>
         </thead>
-            
-            <tr>
-                <td><img src="Pictures/AMD_Athlon_200GE.jpg" id="productimg"/> </td>
-                <td><h4>AMD Athlon 200GE</h4><br>200EUR<br> </td>
-            </tr>
         
-            <tr>
-                <td><img src="Pictures/AMD_Athlon_200GE.jpg" id="productimg"/> </td>
-                <td><h4>AMD Athlon 200GE</h4><br>200EUR<br> </td>
-            </tr>
+        <tr>
+                <td>1</td>
+                <td>Grafikkarte</td>
+                <td>2</td>
+                <td>200€</td>
+        </tr>
         
-
-    </table> 
+        <tr>
+                <td>1</td>
+                <td>Grafikkarte</td>
+                <td>2</td>
+                <td>200€</td>
+        </tr>
+        
+        <tr>
+                <td>1</td>
+                <td>Grafikkarte</td>
+                <td>2</td>
+                <td>200€</td>
+          </tr>
+  </table>
 </div>    
-<!--Produktliste-->   
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <br><br>
     
+
+<!-- Table-->    
+
+<!--Payment and delivery adress-->    
+    
+<div class="container">
+    
+    
+<!--Payment-->    
+    <h2>Bezahlmetoden</h2>
+ 
+    
+    <form class="form-horizontal" action="/action_page.php">
+        
+
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">          
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2">Name:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Name" name="email">
+            </div>
+        </div>        
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Lieferadresse:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Lieferadresse" name="email">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Ort:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Ort" name="email">
+            </div>
+        </div>        
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Bezahloption</label>
+            <select class="form-control col-sm-10">
+                <option>Paypal</option>
+                <option>VISA</option>
+                <option>Master</option>
+            </select>
+        </div>
+        
+        <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember">Email und Passwort merken</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Bestätigung</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!--Payment-->    
+        
+<!--Payment and delivery adress-->        
     
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 primary-color">
@@ -171,65 +250,10 @@
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
       <a href="http://google.de"> HardwareElectronics.com</a>
     </div>
-
     <!-- Copyright -->
 
   </footer>
   <!-- Footer -->
-    
-
-  </div>
-  <a href="#P">Kontakt</a>-->
-</div>
-<div class="content">
-    <h1>Prozessoren</h1>
-    <table>
-        <tr>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_2600.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_2700X.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_2600x.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_2400G.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_2200G.jpg" class="a50"/></a></td>
-        </tr>
-        <tr>
-            <td><a href="Detail.html">AMD Ryzen 5 2600<br>147,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 7 2700X<br>299,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 5 2600X<br>188,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 5 2400G<br>125,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 3 2200G<br>84,90€</a></td>
-        </tr>
-        <tr>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/Intel_Core_i9_9900K.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/Intel_Core_i7_9700K.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/Intel_Core_i5_9600K.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/Intel_Core_i3_8100.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/Intel_Core_i7_8700.jpg" class="a50"/></a></td>
-        </tr>
-        <tr>
-            <td><a href="Detail.html">Intel Core i9 9900K<br>516,90€</a></td>
-            <td><a href="Detail.html">Intel Core i7 9700K<br>418,90€</a></td>
-            <td><a href="Detail.html">Intel Core i5 9600K<br>260,90€</a></td>
-            <td><a href="Detail.html">Intel Core i3 8100<br>141,90€</a></td>
-            <td><a href="Detail.html">Intel Core i7 8700<br>318,90€</a></td>
-        </tr>
-        <tr>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_2700.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1800X.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1300x.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1600X.jpg" class="a50"/></a></td>
-            <td class="prodPic"><a href="Detail.html"><img src="Pictures/AMD_Athlon_200GE.jpg" class="a50"/></a></td>
-        </tr>
-        <tr>
-            <td><a href="Detail.html">AMD Ryzen 5 2700<br>220,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 7 1800X<br>232,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 5 1300X<br>104,90€</a></td>
-            <td><a href="Detail.html">AMD Ryzen 5 1600X<br>127,90€</a></td>
-            <td><a href="Detail.html">AMD Athlon 200GE<br>46,90€</a></td>
-        </tr>
-    </table>
-</div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
