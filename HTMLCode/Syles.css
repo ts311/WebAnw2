@@ -1,6 +1,6 @@
 /*body background*/
 body {
-    background-color: lightgray !important;
+    background-color: lightgray;
     padding: 10px;
 }
 
@@ -46,10 +46,10 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+/*.carousel {
   height: 500px;
   margin-bottom: 60px;
-}
+}*/
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -106,18 +106,27 @@ body {
 /*Detail Picture*/
 
 .detlPic {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-right: 5%;
 }
+.star {
+  width: 100px;
+}
+
+/*Content*/
 .content {
   padding-left: 15% !important;
   padding-right: 15% !important;
   padding-top: 3%;
 }
-.star {
-  width: 100px;
+.margin {
+  margin-bottom: 50px;
 }
+.clearfix {
+  overflow: auto;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
