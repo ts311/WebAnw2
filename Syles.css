@@ -1,17 +1,7 @@
-/* Links - change color on hover */
-.topnav a:hover {
-  background-color: #FFCC00;
-  color: black;
-} 
-
-.platzhalter {
-    padding: 20px;
-}
-
 /*body background*/
 body {
     background-color: lightgray !important;
-    padding: 12px;
+    padding: 10px;
 }
 
 /*for changing color of links in navbar*/
@@ -41,10 +31,6 @@ a#kont {
 .primary-color {
     background-color: rgb(25, 153, 204);
     background-color: rgb(241, 241, 47);
-}
-.sec-color {
-    background-color: rgb(27, 155, 206);
-    background-color: rgb(270, 270, 100) !important;
 }
 
 /* GLOBAL STYLES
