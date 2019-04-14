@@ -20,7 +20,6 @@
     
 
 </head>
-
 <body>	
     <!-- Header -->
 	<div class="container-fluid headerbg">
@@ -62,72 +61,124 @@
   </li>
   </ul>
 </nav>
-<!-- !Navbar -->    
-
-<!--Produktliste-->
-<div class="container-fluid">    
-    <div class="row pad">
-             
-        <div class="col-md-3">    
-            <a href="#"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"><br><h5>AMD Ryzen 1300x</h5>Preis:500 EUR<br>Details: brust</a>
-        </div>    
-            
-        <div class="col-md-3">
-            <a href="#"><img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic"><br><h5>AMD Ryzen 1600X</h5>Preis: 250 EUR<br>Details: 3GHz (Boost: 5GHz) <br> Kerne: 6 </a>
-        </div>
-        
-        <div class="col-md-3">    
-            <a href="#"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"><br><h5>AMD Ryzen 1300x</h5>Preis:500 EUR<br>Details: brust</a>
-        </div>
-        
-        <div class="col-md-3">
-            <a href="#"><img src="Pictures/AMD_Ryzen_1800X.jpg" class="pic"><br><h5>AMD Ryzen 1800X</h5>Preis: 350 EUR<br>Details: 3GHz (Boost: 6GHz) <br> Kerne: 6 </a>
-        </div>
-    </div>
+<!-- !Navbar -->
     
-    <div class="row pad">
-             
-        <div class="col-md-3">    
-            <a href="#"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"><br><h5>AMD Ryzen 1300x</h5>Preis:500 EUR<br>Details: brust</a>
-        </div>    
-            
-        <div class="col-md-3">
-            <a href="#"><img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic"><br><h5>AMD Ryzen 1600X</h5>Preis: 250 EUR<br>Details: 3GHz (Boost: 5GHz) <br> Kerne: 6 </a>
-        </div>
-            
-        <div class="col-md-3">
-            <a href="#"><img src="Pictures/AMD_Ryzen_1800X.jpg" class="pic"><br><h5>AMD Ryzen 1800X</h5>Preis: 350 EUR<br>Details: 3GHz (Boost: 6GHz) <br> Kerne: 6 </a>
-        </div>
+<!--Table -->
+   
+<div class="container">
+    <h2>Ihr Einkaufswagen</h2>    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Produkt</th>
+                <th>Stückzahl</th>
+                <th>Preis</th>
+            </tr>
+        </thead>
         
-        <div class="col-md-3">    
-            <a href="#"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"><br><h5>AMD Ryzen 1300x</h5>Preis:500 EUR<br>Details: brust</a>
-        </div>          
-    </div>
-    
-    <div class="row pad">
-             
-        <div class="col-md-3">    
-            <a href="#"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"><br><h5>AMD Ryzen 1300x</h5>Preis:500 EUR<br>Details: brust</a>
-        </div>  
+        <tr>
+                <td>1</td>
+                <td>Grafikkarte</td>
+                <td>2</td>
+                <td>200€</td>
+        </tr>
         
-        <div class="col-md-3">    
-            <a href="#"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"><br><h5>AMD Ryzen 1300x</h5>Preis:500 EUR<br>Details: brust</a>
-        </div>  
-            
-        <div class="col-md-3">
-            <a href="#"><img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic"><br><h5>AMD Ryzen 1600X</h5>Preis: 250 EUR<br>Details: 3GHz (Boost: 5GHz) <br> Kerne: 6 </a>
-        </div>
-            
-        <div class="col-md-3">
-            <a href="#"><img src="Pictures/AMD_Ryzen_1800X.jpg" class="pic"><br><h5>AMD Ryzen 1800X</h5>Preis: 350 EUR<br>Details: 3GHz (Boost: 6GHz) <br> Kerne: 6 </a>
-        </div>
-    </div>    
+        <tr>
+                <td>1</td>
+                <td>Grafikkarte</td>
+                <td>2</td>
+                <td>200€</td>
+        </tr>
+        
+        <tr>
+                <td>1</td>
+                <td>Grafikkarte</td>
+                <td>2</td>
+                <td>200€</td>
+          </tr>
+  </table>
 </div>    
- 
-<!--Produktliste-->   
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <br><br>
     
+
+<!-- Table-->    
+
+<!--Payment and delivery adress-->    
+    
+<div class="container">
+    
+    
+<!--Payment-->    
+    <h2>Bezahlmetoden</h2>
+ 
+    
+    <form class="form-horizontal" action="/action_page.php">
+        
+
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">          
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2">Name:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Name" name="email">
+            </div>
+        </div>        
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Lieferadresse:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Lieferadresse" name="email">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Ort:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Ort" name="email">
+            </div>
+        </div>        
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Bezahloption</label>
+            <select class="form-control col-sm-10">
+                <option>Paypal</option>
+                <option>VISA</option>
+                <option>Master</option>
+            </select>
+        </div>
+        
+        <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember">Email und Passwort merken</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Bestätigung</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!--Payment-->    
+        
+<!--Payment and delivery adress-->        
     
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 primary-color">
@@ -203,7 +254,6 @@
 
   </footer>
   <!-- Footer -->
-    
-</body>
 
+</body>
 </html>
