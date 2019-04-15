@@ -140,14 +140,20 @@ body {
   padding-right: 15% !important;
   padding-top: 3%;
 }
+.margin-b-50 {
+  margin-bottom: 50px;
+}
+.margin-t-150 {
+  margin-top: 150px;
+}
 .height-100 {
-  min-height: 100px;
+  height: 100px;
 }
 .width-100 {
   width: 100%;
 }
-.big-checkbox {
-  width: 30px; height: 30px;
+.detlFont {
+  font-size: 200%;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -181,12 +187,6 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
-  .detlFont {
-    font-size: 200%;
-  }
-  .margin-t-150 {
-    margin-top: 10%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -198,20 +198,6 @@ body {
 
 /*PRODUCT PAGE
 -------------------------------------------------- */
-
-.pad{
-    /*padding-left: 300px;*/    
-    padding-bottom: 30px;
-    padding-top: 30px;
-    border: 3px solid rgb(241, 241, 47);
-    text-align-last: center;    
-
-.table{
-    
-    padding-top: 3px;
-    padding-bottom: 3px;
-    
-}
 
 .padpic{
     padding-left: 10px;    
@@ -233,7 +219,6 @@ body {
     border: 2px solid white;
     text-align: center;
     
-
 }
 
 .pic{
