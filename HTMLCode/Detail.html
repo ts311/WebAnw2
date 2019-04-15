@@ -68,9 +68,10 @@
 <!-- !Navbar -->
     
 <!-- Content -->
+<div class="platzhalter"></div>
 <div class="container-fluid content">
     <h1>AMD Ryzen 2600X</h1>
-    <div class="row margin-b-50">
+    <div class="row margin-b-50 detlFont">
         <div class="col-6 col">
           <!--Carousel Wrapper-->
           <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
@@ -118,17 +119,18 @@
           </div>
           <!--/.Carousel Wrapper-->
         </div>
-        <div class="col-3">
+        <div class="col-3 margin-t-150">
           <div class="col height-100">
             Preis: 189,99€
           </div>
           <div class="col height-100">
-            <img src="Pictures/4-Sterne.png" class="star"/><br>4,2 Sterne
+            <img src="Pictures/4-Sterne.png" class="star-big"/><br>4,2 Sterne
           </div>
           <div class="col height-100">
             Lagernd: >5 Stück
           </div>
-        <div class="col-3">
+        </div>
+        <div class="col-3 margin-t-150">
           <div class="col height-100">
             Anzahl: <input type="number" value="1" min="1" max="5"/>
           </div>
@@ -140,7 +142,9 @@
           </div>
         </div>
     </div>
-    <div class="margin-b-50">
+    <!--Produktbeschreibung-->
+    <div>
+      <hr class="featurette-divider">
       <h2>Produktbeschreibung</h2>
       <p>Mit der zweiten Generation von RYZEN™ bringt AMD eine neue Generation von Prozessoren an dem Start, die Sie vollgepackt mit modernster und innovativer Technologien, 
         sofort in ihrem Bann ziehen wird.<br>Die 12 Nanometer Prozessortechnologie ist eine technologische Meisterleistung und maßgeblich für die enorme Leistungssteigerung 
@@ -157,7 +161,9 @@
         300er-Chipsatz ist ein BIOS-Update notwendig. Bitte prüfen Sie die Kompatibilität auf den Herstellerseiten. Beim Kauf eines Mainboards bieten wir optional eine 
         BIOS-Aktualisierung an und bringen die Plattform auf dem neuesten Stand.</p>
     </div>
-    <div class="margin-b-50">
+    <!--Technische Daten-->
+    <div class="width-100">
+      <hr class="featurette-divider">
       <h2>Technische Daten</h2>
       <table class="table table-striped table-dark margin-b-50">
           <tr>
@@ -190,13 +196,15 @@
           </tr>
       </table>
     </div>
-    <div class="margin-b-50">
+    <!--Bewertungen-->
+    <div>
+      <hr class="featurette-divider">
       <h2>Bewertungen</h2>
         <div>
-          <img src="Pictures/4-Sterne.png" class="star"/>Verifizierter Kauf<br><p>Schnelle Lieferung, Neu und ungeöffnet. Kann mich nicht beschweren.<br>Der CPU selbst läuft auch super</p>
+          <img src="Pictures/4-Sterne.png" class="star-small"/>Verifizierter Kauf<br><p>Schnelle Lieferung, Neu und ungeöffnet. Kann mich nicht beschweren.<br>Der CPU selbst läuft auch super</p>
       </div>
       <div>
-        <img src="Pictures/5-Sterne.png" class="star"/>Verifizierter Kauf<br>
+        <img src="Pictures/5-Sterne.png" class="star-small"/>Verifizierter Kauf<br>
         <p>Auch von mir eine klare Empfehlung. Über den Kühler kann ich nichts sagen, in einem Computerladen vor Ort habe ich für wenig Geld den Wraith Max erstanden und der kühlt sehr gut und ist sehr leise 
             | wenn überhaupt hörbar.<br>AMD ist wieder voll konkurrenzfähig und preisgünstig und die AM4-Plattform auch für künftige Modelle nutzbar.<br>Darum ohne Einschränkung 5 Sterne!</p>
       </div>
@@ -207,7 +215,11 @@
       <div>    
         Anzahl Sterne: <input type="number" value="1" min="1" max="5"/>
       </div>
+      <div>
+        <button type="submit" class="btn btn-default">Senden</button>
+      </div>
     </div>
+    <div class="platzhalter"></div>
 </div>
 
 
