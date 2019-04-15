@@ -1,3 +1,6 @@
+.arrowcolor {
+    background-color: black !important;
+}
 /* Links - change color on hover */
 .topnav a:hover {
   background-color: #FFCC00;
@@ -10,7 +13,7 @@
 
 /*body background*/
 body {
-    background-color: lightgray !important;
+    /*background-color: lightgray !important;*/
     padding: 12px;
 }
 
@@ -195,18 +198,49 @@ body {
 
 /*PRODUCT PAGE
 -------------------------------------------------- */
+
 .pad{
     /*padding-left: 300px;*/    
     padding-bottom: 30px;
     padding-top: 30px;
     border: 3px solid rgb(241, 241, 47);
     text-align-last: center;    
+
+.table{
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
+
+.padpic{
+    padding-left: 10px;    
+    padding-bottom: 0px;
+    padding-top: 10px;
+    border-width: 1px;
+    border: 2px solid white;
+    border-bottom:  none;
+    text-align: center;
+    
+}
+
+.padtext{
+    padding-left: 0px;    
+    padding-bottom: 10px;
+    padding-top: 1px;
+    border-top: none;
+    border-width: 1px;
+    border: 2px solid white;
+    text-align: center;
+    
+
 }
 
 .pic{
     width: 50%;
     
 }
+
 
 /*FOOTER
 -----------------------------------------------------*/
