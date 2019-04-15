@@ -1,8 +1,18 @@
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #FFCC00;
+  color: black;
+} 
+
+.platzhalter {
+    padding: 20px;
+}
+
 /*body background*/
 
 body {
     background-color: lightgray !important;
-    padding: 10px;
+    padding: 12px;
 }
 
 /*for changing color of links in navbar*/
@@ -25,8 +35,13 @@ img#logo {
 }
 /*tryed to let 1 link in navbar float right... didnt work*/
 
+
 .floatright {
     text-align: right !important;
+
+  .pull-right {
+    float: right !important;
+
 }
 
 a#kont {
@@ -38,6 +53,10 @@ a#kont {
 .primary-color {
     background-color: rgb(25, 153, 204);
     background-color: rgb(241, 241, 47);
+}
+.sec-color {
+    background-color: rgb(27, 155, 206);
+    background-color: rgb(270, 270, 100) !important;
 }
 
 
@@ -55,10 +74,10 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+/*.carousel {
   height: 500px;
   margin-bottom: 60px;
-}
+}*/
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -115,13 +134,28 @@ body {
 /*Detail Picture*/
 
 .detlPic {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-right: 5%;
 }
+.star {
+  width: 100px;
+}
+
+/*Content*/
 .content {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+  padding-top: 3%;
+}
+.margin-b-50 {
+  margin-bottom: 50px;
+}
+.margin-t-150 {
+  margin-top: 150px;
+}
+.height-100 {
+  height: 100px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -166,7 +200,7 @@ body {
 
 /*PRODUCT PAGE
 -------------------------------------------------- */
-<<<<<<< HEAD
+
 .table{
     
     padding-top: 3px;
@@ -200,7 +234,6 @@ body {
     width: 50%;
     
 }
-=======
 .pad{
     /*padding-left: 300px;*/    
     padding-bottom: 30px;
@@ -214,4 +247,11 @@ body {
     width: 50%;
     
 }
->>>>>>> e9e5b411cdb8bea052556e6a085d7dc1eab19b75
+
+/*FOOTER
+-----------------------------------------------------*/
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
