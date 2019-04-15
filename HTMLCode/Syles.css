@@ -124,8 +124,11 @@ body {
   float: left;
   margin-right: 5%;
 }
-.star {
+.star-small {
   width: 100px;
+}
+.star-big {
+  width: 200px;
 }
 
 /*Content*/
@@ -142,6 +145,12 @@ body {
 }
 .height-100 {
   height: 100px;
+}
+.width-100 {
+  width: 100%;
+}
+.detlFont {
+  font-size: 200%;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
