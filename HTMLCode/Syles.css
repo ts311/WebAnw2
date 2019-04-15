@@ -137,20 +137,14 @@ body {
   padding-right: 15% !important;
   padding-top: 3%;
 }
-.margin-b-50 {
-  margin-bottom: 50px;
-}
-.margin-t-150 {
-  margin-top: 150px;
-}
 .height-100 {
-  height: 100px;
+  min-height: 100px;
 }
 .width-100 {
   width: 100%;
 }
-.detlFont {
-  font-size: 200%;
+.big-checkbox {
+  width: 30px; height: 30px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -183,6 +177,12 @@ body {
 
   .featurette-heading {
     font-size: 50px;
+  }
+  .detlFont {
+    font-size: 200%;
+  }
+  .margin-t-150 {
+    margin-top: 10%;
   }
 }
 
