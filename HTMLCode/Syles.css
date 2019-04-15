@@ -1,46 +1,51 @@
-/*body background*/
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #FFCC00;
+  color: black;
+} 
 
+.platzhalter {
+    padding: 20px;
+}
+
+/*body background*/
 body {
     background-color: lightgray !important;
-    padding: 10px;
+    padding: 12px;
 }
 
 /*for changing color of links in navbar*/
-
 a {
     color:black !important;
 }
 
 /*size for the logo*/
-
 img#logo {
   width: 40%; 
   height: auto;
 }
 /*bg of header*/
-
 .headerbg {
     background-color: #333;
     padding: 30px;
 }
 /*tryed to let 1 link in navbar float right... didnt work*/
-
-.floatright {
-    text-align: right !important;
+.pull-right {
+    float: right !important;
 }
-
 a#kont {
     float: right;
 }
 /*!float right*/
 /*color of Navbar*/
-
 .primary-color {
     background-color: rgb(25, 153, 204);
     background-color: rgb(241, 241, 47);
 }
-
-
+.sec-color {
+    background-color: rgb(27, 155, 206);
+    background-color: rgb(270, 270, 100) !important;
+}
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -55,10 +60,10 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+/*.carousel {
   height: 500px;
   margin-bottom: 60px;
-}
+}*/
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -115,13 +120,37 @@ body {
 /*Detail Picture*/
 
 .detlPic {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-right: 5%;
 }
+.star-small {
+  width: 100px;
+}
+.star-big {
+  width: 200px;
+}
+
+/*Content*/
 .content {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+  padding-top: 3%;
+}
+.margin-b-50 {
+  margin-bottom: 50px;
+}
+.margin-t-150 {
+  margin-top: 150px;
+}
+.height-100 {
+  height: 100px;
+}
+.width-100 {
+  width: 100%;
+}
+.detlFont {
+  font-size: 200%;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -198,4 +227,13 @@ body {
 .pic{
     width: 50%;
     
+}
+
+
+/*FOOTER
+-----------------------------------------------------*/
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
