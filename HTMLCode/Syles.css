@@ -1,3 +1,6 @@
+.arrowcolor {
+    background-color: black !important;
+}
 /* Links - change color on hover */
 .topnav a:hover {
   background-color: #FFCC00;
@@ -195,12 +198,6 @@ body {
 
 /*PRODUCT PAGE
 -------------------------------------------------- */
-.table{
-    
-    padding-top: 3px;
-    padding-bottom: 3px;
-    
-}
 
 .padpic{
     padding-left: 10px;    
