@@ -1,3 +1,6 @@
+.arrowcolor {
+    background-color: black !important;
+}
 /* Links - change color on hover */
 .topnav a:hover {
   background-color: #FFCC00;
