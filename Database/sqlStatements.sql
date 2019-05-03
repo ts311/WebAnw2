@@ -10,7 +10,7 @@ Create table Cart(
 	CID		INTEGER PRIMARY KEY,
 	CNR		INTEGER,
 	ArtNr		INTEGER,
-	Count		INTEGER(2) NOT NULL,
+	Count		INTEGER(1) NOT NULL,
 	FOREIGN KEY(CNR) references Customer(CNR),
 	FOREIGN KEY(ArtNR) references Article(ArtNr)
 );
@@ -49,7 +49,7 @@ Create table Rating(
 	FOREIGN KEY(CNR) references Customer(CNR)
 );
 
-Create table Festplatte(
+Create table HardDrive(
 	ArtNr		INTEGER PRIMARY KEY, 
 	Capacity 	INTEGER,
 	Read		INTEGER,
@@ -95,7 +95,7 @@ Create table GraphicsCard(
 	TDP		INTEGER
 );
 
-Create table Arbeitsspeicher(
+Create table RAM(
 	ArtNr		INTEGER PRIMARY KEY,	
 	Capacity	INTEGER,
 	NumberOfModul 	INTEGER,
