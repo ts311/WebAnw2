@@ -1,5 +1,5 @@
 # WebAnw2
-Sprache: Englisch <br>
+Sprache: English <br>
 IDE: IntelliJ Ultimate <br>
 <br><br>
 
