@@ -1,5 +1,5 @@
 Create table Article(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Manufacturer	TEXT(20) NOT NULL,
 	ArtName		TEXT(20) NOT NULL,
 	Price		REAL  NOT NULL,
@@ -7,7 +7,7 @@ Create table Article(
 );
 
 Create table Cart(
-	CID		INTEGER PRIMARY KEY,
+	CID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	CNR		INTEGER,
 	ArtNr		INTEGER,
 	Count		INTEGER(1) NOT NULL,
@@ -16,7 +16,7 @@ Create table Cart(
 );
 
 Create table Customer(
-	CNR		INTEGER PRIMARY KEY,
+	CNR		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Email		TEXT(50),
 	Name		TEXT(50),
 	Straße		TEXT(50),
@@ -24,23 +24,23 @@ Create table Customer(
 );
 
 Create table Purchase(
-	OID		INTEGER PRIMARY KEY,
+	OID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	CNR		INTEGER,
 	Payment		TEXT(20),
 	FOREIGN KEY(CNR) references Customer(CNR)
 );
 
 Create table PurchCart(
-	PID		TEXT PRIMARY KEY,
-	OID		TEXT,
-	ArtNr		TEXT,
+	PID		INTEGER PRIMARY KEY AUTOINCREMENT,
+	OID		INTEGER,
+	ArtNr		INTEGER,
 	Count		INTEGER,
 	FOREIGN KEY(OID) references Purchase(OID),
 	FOREIGN KEY(ArtNr) references Article(ArtNr)
 );
 
 Create table Rating(
-	RID		INTEGER PRIMARY KEY,
+	RID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	ArtNr		INTEGER,
 	CNR		INTEGER,
 	Rating		INTEGER,
@@ -50,7 +50,7 @@ Create table Rating(
 );
 
 Create table HardDrive(
-	ArtNr		INTEGER PRIMARY KEY, 
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT, 
 	Capacity 	INTEGER,
 	Read		INTEGER,
 	Write		INTEGER,
@@ -60,19 +60,19 @@ Create table HardDrive(
 );
 
 Create table HDD(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	RPM		INTEGER,
 	Cache		INTEGER
 );
 
 Create table SSD(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Chiptype	TEXT(20),
 	Lifetime	INTEGER
 );
 
 Create table Processor(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Cores		INTEGER,
 	Threads		INTEGER,
 	Frequenzy	REAL,
@@ -84,7 +84,7 @@ Create table Processor(
 );
 
 Create table GraphicsCard(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Frequenzy	REAL,
 	Turbo		REAL,
 	Streamp		INTEGER,
@@ -96,7 +96,7 @@ Create table GraphicsCard(
 );
 
 Create table RAM(
-	ArtNr		INTEGER PRIMARY KEY,	
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,	
 	Capacity	INTEGER,
 	NumberOfModul 	INTEGER,
 	CapacityType	INTEGER,
