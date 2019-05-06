@@ -1,7 +1,7 @@
 Create table Article(
 	ArtNr		INTEGER PRIMARY KEY,
-	Manufacturer	VARCHAR(20) NOT NULL,
-	ArtName		VARCHAR(20) NOT NULL,
+	Manufacturer	TEXT(20) NOT NULL,
+	ArtName		TEXT(20) NOT NULL,
 	Price		REAL  NOT NULL,
 	ArtCount	INTEGER NOT NULL
 );
@@ -17,23 +17,23 @@ Create table Cart(
 
 Create table Customer(
 	CNR		INTEGER PRIMARY KEY,
-	Email		VARCHAR(50),
-	Name		VARCHAR(50),
-	Straße		VARCHAR(50),
-	City		VARCHAR(50)
+	Email		TEXT(50),
+	Name		TEXT(50),
+	Straße		TEXT(50),
+	City		TEXT(50)
 );
 
 Create table Purchase(
 	OID		INTEGER PRIMARY KEY,
 	CNR		INTEGER,
-	Payment		VARCHAR(20),
+	Payment		TEXT(20),
 	FOREIGN KEY(CNR) references Customer(CNR)
 );
 
 Create table PurchCart(
-	PID		INTEGER PRIMARY KEY,
-	OID		INTEGER,
-	ArtNr		INTEGER,
+	PID		TEXT PRIMARY KEY,
+	OID		TEXT,
+	ArtNr		TEXT,
 	Count		INTEGER,
 	FOREIGN KEY(OID) references Purchase(OID),
 	FOREIGN KEY(ArtNr) references Article(ArtNr)
@@ -55,8 +55,8 @@ Create table HardDrive(
 	Read		INTEGER,
 	Write		INTEGER,
 	Accesstime	FLOAT,
-	Format		VARCHAR(10),
-	Interface	VARCHAR(20)
+	Format		TEXT(10),
+	Interface	TEXT(20)
 );
 
 Create table HDD(
@@ -67,7 +67,7 @@ Create table HDD(
 
 Create table SSD(
 	ArtNr		INTEGER PRIMARY KEY,
-	Chiptype	VARCHAR(20),
+	Chiptype	TEXT(20),
 	Lifetime	INTEGER
 );
 
@@ -79,7 +79,7 @@ Create table Processor(
 	Turbo		REAL,
 	L2Cache		INTEGER,
 	L3Cache		INTEGER,
-	Socket		VARCHAR(20),
+	Socket		TEXT(20),
 	TDP		INTEGER 
 );
 
@@ -88,9 +88,9 @@ Create table GraphicsCard(
 	Frequenzy	REAL,
 	Turbo		REAL,
 	Streamp		INTEGER,
-	Ports		VARCHAR(20),
+	Ports		TEXT(20),
 	Memorysize	INTEGER,
-	Memorytype	VARCHAR(20),
+	Memorytype	TEXT(20),
 	Memoryfrequency	INTEGER,
 	TDP		INTEGER
 );
@@ -100,7 +100,7 @@ Create table RAM(
 	Capacity	INTEGER,
 	NumberOfModul 	INTEGER,
 	CapacityType	INTEGER,
-	MemoryType	VARCHAR(20),
+	MemoryType	TEXT(20),
 	Voltage		REAL,
 	Latency		INTEGER,
 	tRCD		INTEGER,
