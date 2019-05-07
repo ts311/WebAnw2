@@ -1,13 +1,13 @@
 Create table Article(
-	ArtNr		INTEGER PRIMARY KEY,
-	Manufacturer	VARCHAR(20) NOT NULL,
-	ArtName		VARCHAR(20) NOT NULL,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
+	Manufacturer	TEXT(20) NOT NULL,
+	ArtName		TEXT(20) NOT NULL,
 	Price		REAL  NOT NULL,
 	ArtCount	INTEGER NOT NULL
 );
 
 Create table Cart(
-	CID		INTEGER PRIMARY KEY,
+	CID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	CNR		INTEGER,
 	ArtNr		INTEGER,
 	Count		INTEGER(1) NOT NULL,
@@ -16,22 +16,22 @@ Create table Cart(
 );
 
 Create table Customer(
-	CNR		INTEGER PRIMARY KEY,
-	Email		VARCHAR(50),
-	Name		VARCHAR(50),
-	Straße		VARCHAR(50),
-	City		VARCHAR(50)
+	CNR		INTEGER PRIMARY KEY AUTOINCREMENT,
+	Email		TEXT(50),
+	Name		TEXT(50),
+	Straße		TEXT(50),
+	City		TEXT(50)
 );
 
 Create table Purchase(
-	OID		INTEGER PRIMARY KEY,
+	OID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	CNR		INTEGER,
-	Payment		VARCHAR(20),
+	Payment		TEXT(20),
 	FOREIGN KEY(CNR) references Customer(CNR)
 );
 
 Create table PurchCart(
-	PID		INTEGER PRIMARY KEY,
+	PID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	OID		INTEGER,
 	ArtNr		INTEGER,
 	Count		INTEGER,
@@ -40,7 +40,7 @@ Create table PurchCart(
 );
 
 Create table Rating(
-	RID		INTEGER PRIMARY KEY,
+	RID		INTEGER PRIMARY KEY AUTOINCREMENT,
 	ArtNr		INTEGER,
 	CNR		INTEGER,
 	Rating		INTEGER,
@@ -50,57 +50,57 @@ Create table Rating(
 );
 
 Create table HardDrive(
-	ArtNr		INTEGER PRIMARY KEY, 
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT, 
 	Capacity 	INTEGER,
 	Read		INTEGER,
 	Write		INTEGER,
 	Accesstime	FLOAT,
-	Format		VARCHAR(10),
-	Interface	VARCHAR(20)
+	Format		TEXT(10),
+	Interface	TEXT(20)
 );
 
 Create table HDD(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	RPM		INTEGER,
 	Cache		INTEGER
 );
 
 Create table SSD(
-	ArtNr		INTEGER PRIMARY KEY,
-	Chiptype	VARCHAR(20),
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
+	Chiptype	TEXT(20),
 	Lifetime	INTEGER
 );
 
 Create table Processor(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Cores		INTEGER,
 	Threads		INTEGER,
 	Frequenzy	REAL,
 	Turbo		REAL,
 	L2Cache		INTEGER,
 	L3Cache		INTEGER,
-	Socket		VARCHAR(20),
+	Socket		TEXT(20),
 	TDP		INTEGER 
 );
 
 Create table GraphicsCard(
-	ArtNr		INTEGER PRIMARY KEY,
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,
 	Frequenzy	REAL,
 	Turbo		REAL,
 	Streamp		INTEGER,
-	Ports		VARCHAR(20),
+	Ports		TEXT(20),
 	Memorysize	INTEGER,
-	Memorytype	VARCHAR(20),
+	Memorytype	TEXT(20),
 	Memoryfrequency	INTEGER,
 	TDP		INTEGER
 );
 
 Create table RAM(
-	ArtNr		INTEGER PRIMARY KEY,	
+	ArtNr		INTEGER PRIMARY KEY AUTOINCREMENT,	
 	Capacity	INTEGER,
 	NumberOfModul 	INTEGER,
 	CapacityType	INTEGER,
-	MemoryType	VARCHAR(20),
+	MemoryType	TEXT(20),
 	Voltage		REAL,
 	Latency		INTEGER,
 	tRCD		INTEGER,
