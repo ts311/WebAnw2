@@ -111,20 +111,35 @@ Create table RAM(
 
 
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', 'Athlon 200GE', 42.00, 10, 2, 4, 3.20, 4.50, 1024, 4000, 'So.AM4', 35 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', 'Athlon 200GE', 42.00, 10, 2, 4, 3.20, 4.50, 1024, 4000, 'So.AM4', 35 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', 'Ryzen 1300X', 84.90, 6, 4, 4, 3.40, 3.70, 1024, 8000, 'So.AM4', 65 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', 'Ryzen 1300X', 84.90, 6, 4, 4, 3.40, 3.70, 1024, 8000, 'So.AM4', 65 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '1600X', 124.00, 4, 6, 12, 3.60, 4.00, 3072, 16000, 'So.AM4', 95 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '1600X', 124.00, 4, 6, 12, 3.60, 4.00, 3072, 16000, 'So.AM4', 95 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '1800X', 220.00, 5, 8, 16, 3.60, 4.00, 4096, 16000, 'So.AM4', 95 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '1800X', 220.00, 5, 8, 16, 3.60, 4.00, 4096, 16000, 'So.AM4', 95 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2200G', 85.00, 3, 4, 4, 3.50, 3.70, 2048, 4000, 'So.AM4', 65 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2200G', 85.00, 3, 4, 4, 3.50, 3.70, 2048, 4000, 'So.AM4', 65 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2400G', 124.00, 3, 4, 8, 3.60, 3.90, 2048, 4000, 'So.AM4', 65 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2400G', 124.00, 3, 4, 8, 3.60, 3.90, 2048, 4000, 'So.AM4', 65 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2600G', 150.00, 8, 6, 12, 3.40, 3.90, 3072, 16000, 'So.AM4', 65 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2600G', 150.00, 8, 6, 12, 3.40, 3.90, 3072, 16000, 'So.AM4', 65 );
 
-INSTER INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2700G', 210.99, 7, 8, 16, 3.20, 4.10, 4096, 16000, 'So.AM4', 65 );
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('AMD', '2700G', 210.99, 7, 8, 16, 3.20, 4.10, 4096, 16000, 'So.AM4', 65 );
+
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('Intel', 'Core I3 8100', 140.99, 5, 4, 4, 3.00, 3.60, 1024, 6000, 'FCLGA1151', 65 );
+
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('Intel', 'Core I5 9600', 250.99, 2, 6, 6, 3.70, 4.60, 2048, 9000, 'FCLGA1151', 95 );
+
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('Intel', 'Core I7 8700', 319.99, 6, 6, 12, 3.20, 4.60, 3072, 12000, 'FCLGA1151', 65 );
+
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('Intel', 'Core I7 9700', 399.99, 8, 8, 8, 3.60, 4.90, 4096, 12000, 'FCLGA1151', 95 );
+
+INSERT INTO Processor (Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,L2Cache,L3Cache,Socket,TDP) VALUES ('Intel', 'Core I9 9900', 399.99, 8, 8, 16, 3.60, 5.00, 4096, 16000, 'FCLGA1151', 95 );
+
+
+
+
+INSERT INTO GraphicsCard (Manufacturer,ArtName,Price,ArtCount,Frequency,Turbo,Streamprocessors,Ports,Memorysize,Memorytype,Memoryfrequency,TDP) VALUES ('MSI', 'GeForce GTX 1050 GAMING X 2G', 150.99, 3, 1442, 1556, 32, 2, 2048, GDDR5, 1752,95)
 
 
