@@ -9,7 +9,7 @@
     <filter-class>org.glassfish.jersey.servlet.ServletContainer</filter-class>
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
-      <param-value>com.harwareelectronics.app.Backend.AppConfig</param-value>
+      <param-value>de.he.AppConfig</param-value>
     </init-param>
     <init-param>
       <param-name>jersey.config.servlet.filter.staticContentRegex</param-name>
