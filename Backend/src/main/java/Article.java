@@ -7,4 +7,44 @@ public class Article {
     private String manufact;
     private String artName;
     private int count;
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getArtNr() {
+        return artNr;
+    }
+
+    public void setArtNr(int artNr) {
+        this.artNr = artNr;
+    }
+
+    public String getManufact() {
+        return manufact;
+    }
+
+    public void setManufact(String manufact) {
+        this.manufact = manufact;
+    }
+
+    public String getArtName() {
+        return artName;
+    }
+
+    public void setArtName(String artName) {
+        this.artName = artName;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 }
