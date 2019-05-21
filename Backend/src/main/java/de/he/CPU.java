@@ -1,5 +1,8 @@
 package de.he;
 
+import org.glassfish.jersey.server.mvc.Viewable;
+
+import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 @Path("/cpu")
@@ -10,6 +13,12 @@ public class CPU extends Article {
     private float turbo;
     private String socket;
     private int tdp;
+
+    @GET
+    public Viewable showCpu() {
+        String header = "<html>Hallo Welt!</html>";
+        return new Viewable("/cpu", header);
+    }
 
     public int getCore() {
         return core;
