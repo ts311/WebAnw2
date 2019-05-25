@@ -11,7 +11,7 @@
     </deployment>
     <server-settings>
       <option name="BASE_DIRECTORY_NAME" value="Unnamed_Backend" />
-      <option name="HTTP_PORT" value="8081" />
+      <option name="JNDI_PORT" value="1098" />
     </server-settings>
     <predefined_log_file enabled="true" id="Tomcat" />
     <predefined_log_file enabled="true" id="Tomcat Catalina" />
