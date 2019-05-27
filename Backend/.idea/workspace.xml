@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef16d0e9-4755-4ff4-8dbf-8a36afea8369" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Backend_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_27_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/he/SQLite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_39__Ubuntu_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_41.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Backend.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Backend.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/he/Hardwareelectronics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/he/Hardwareelectronics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,30 +23,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/de/he/CPU.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="136">
-                    <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/de/he/Article.java">
-                <provider selected="true" editor-type-id="text-editor" />
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -73,14 +40,36 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/he/SQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="374">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="22" selection-end-line="48" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#insertCPU#0;class#SQLite#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/he/Hardwareelectronics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1717">
+              <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/he/CPU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -90,11 +79,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="459">
+              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -122,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/main/java/de/he/SQLiteJDBCDriverConnection" />
         <option value="$PROJECT_DIR$/src/main/java/de/he/SQLite.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/de/he/Hardwareelectronics.java" />
       </list>
     </option>
   </component>
@@ -182,42 +172,12 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="D:\Documents\Studium\Semester 4\WebAnw2\Backend" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="D:\Documents\Studium\Semester 4\WebAnw2\Backend" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="D:\Documents\Studium\Semester 4\WebAnw2\Backend" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="artifacts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="D:\Documents\Studium\Semester 4\WebAnw2\Backend" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="codeStyles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="D:\Documents\Studium\Semester 4\WebAnw2\Backend" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="libraries" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="D:\Documents\Studium\Semester 4\WebAnw2\Backend" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="runConfigurations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -265,6 +225,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,17 +282,19 @@
       <workItem from="1558776909951" duration="5540000" />
       <workItem from="1558853875981" duration="217000" />
       <workItem from="1558854142320" duration="518000" />
-      <workItem from="1558885291403" duration="2546000" />
+      <workItem from="1558885291403" duration="3654000" />
+      <workItem from="1558941019681" duration="1157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27761000" />
+    <option name="totallyTimeSpent" value="30026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1999" height="1166" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2857143" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28880867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -392,6 +355,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Pictures/paypal-784404_1280.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/he/Article.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -412,8 +378,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/he/Article.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/he/CPU.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -422,20 +392,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/he/SQLite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/he/Hardwareelectronics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="1717">
+          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/he/SQLite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="22" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#insertCPU#0;class#SQLite#0" />
+          </folding>
         </state>
       </provider>
     </entry>
