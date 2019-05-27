@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <%@ page contentType="text/html; charset=UTF-8" %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tobias ist Schwuuuuul</title>
+
+    <title>Tobi ist Schwuuuuul</title>
+
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
     <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
     <!-- Das neueste kompilierte und minimierte CSS
