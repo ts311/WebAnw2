@@ -1,5 +1,4 @@
-de\he\Hardwareelectronics.class
-de\he\CPU.class
-de\he\Article.class
-de\he\AppConfig.class
-de\he\SQLite.class
+de/he/Hardwareelectronics.class
+de/he/Article.class
+de/he/CPU.class
+de/he/AppConfig.class
