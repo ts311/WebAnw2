@@ -39,3 +39,5 @@ Backend/target
 Backend/\.idea/artifacts/
 
 Backend/\.idea/libraries/
+
+Backend/\.idea/runConfigurations/Tomcat_8_5_41\.xml
