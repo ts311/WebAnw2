@@ -36,3 +36,6 @@ Backend/.idea/httpRequests
 
 Backend/target
 
+Backend/\.idea/artifacts/
+
+Backend/\.idea/libraries/
