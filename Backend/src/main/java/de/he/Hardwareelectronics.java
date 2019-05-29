@@ -32,6 +32,7 @@ public class Hardwareelectronics {
     public Viewable Template() throws Exception {
         // This method is only here to deliver the base HTML
         // which then includes the needed client side javascript to fetch JSON data.
+        System.out.println("Template");
         return new Viewable("/index.jsp");
     }
 
@@ -41,6 +42,7 @@ public class Hardwareelectronics {
     public String cpusJSON() throws Exception {
         //Vector<CPU> entries = getAllCpus();   //Activate when Joels method is ready to return vector
         CPU cpus = getAllCpus();
+        System.out.println("cpusJson");
 
         // By setting our Vector<EntryModel> into the entity method
         // Jersey now tries to convert our POJO (Plain Old Java Object) into JSON
