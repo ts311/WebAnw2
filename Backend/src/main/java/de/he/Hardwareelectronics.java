@@ -25,9 +25,10 @@ import javax.json.Json;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/")
+@Path("")
 public class Hardwareelectronics {
     @GET
+    @Path("cpus")
     public Viewable Template() throws Exception {
         // This method is only here to deliver the base HTML
         // which then includes the needed client side javascript to fetch JSON data.
@@ -35,7 +36,6 @@ public class Hardwareelectronics {
     }
 
     @GET
-    @Path("/cpus")
     // Tell Jersey we want to return JSON
     //@Produces(MediaType.APPLICATION_JSON)
     public String cpusJSON() throws Exception {
