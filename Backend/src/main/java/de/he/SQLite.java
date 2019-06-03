@@ -1,11 +1,31 @@
 package de.he;
 
+import org.glassfish.jersey.server.mvc.Viewable;
+import java.net.URI;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.util.Hashtable;
+import java.util.Vector;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import javax.json.Json;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
 
 public class SQLite {
     private Connection connect() {
@@ -72,7 +92,7 @@ public class SQLite {
         return cpu;
     }
 
-    public CPU getAllCpus() {
+    public Vector<CPU> getAllCpus() {
         String sql = "SELECT (ArtNr,Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,Socket,TDP) FROM Article INNER JOIN Processor ON Article.ArtNr = Processor.ArtNr)";
         Vector<CPU> cpus = new Vector<CPU>();
         try (Connection conn = this.connect();
@@ -83,10 +103,9 @@ public class SQLite {
                 cpus.add(newCpu);
             }
         }
-    }
         catch (SQLException e) {
-        System.out.println(e.getMessage());
-    }
+            System.out.println(e.getMessage());
+        }
         return cpus;
-}
+    }
 }
