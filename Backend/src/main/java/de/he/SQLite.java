@@ -11,8 +11,8 @@ public class SQLite {
     private Connection connect() {
         Connection conn = null;
         try {
-            String url = "jdbc:sqlite:PFAD ANGEBEN";
-            conn = DriverManager.getConnection(url);
+            String sqlPath = "";
+            conn = DriverManager.getConnection("jdbc:sqlite:" + sqlPath);
         }
         catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -20,7 +20,7 @@ public class SQLite {
         return conn;
     }
 
-    public void insertCPU(CPU cpu) {
+    public int insertCPU(CPU cpu) {
         String sqlArt = "INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount) VALUES (?,?,?,?,?)";
         String sqlCPU = "INSERT INTO Processor(ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (?,?,?,?,?,?,?)";
         try (Connection conn = this.connect();
@@ -42,20 +42,26 @@ public class SQLite {
 
             psArt.executeUpdate();
             psCPU.executeUpdate();
+
+            return 0;
         }
         catch (SQLException e) {
             System.out.println(e.getMessage());
+
+            return -1;
         }
     }
 
-    public void selectCPU(int artNr) {
+    public CPU selectCPU(int artNr) {
         String sql = "SELECT (ArtNr,Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,Socket,TDP) FROM Article INNER JOIN Processor ON Article.ArtNr = Processor.ArtNr)";
+        CPU cpu = new CPU(0, 0, "", "", 0, 0, 0, 0, 0, "", 0);
         try (Connection conn = this.connect();
-                Statement stmt = conn.createStatement();
-                ResultSet rs = stmt.executeQuery(sql)) {
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
                 if (rs.getInt("ArtNr") == artNr) {
-                    CPU halko = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"));
+                    CPU cpu1 = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"));
+                    cpu = cpu1;
                     break;
                 }
             }
@@ -63,5 +69,24 @@ public class SQLite {
         catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+        return cpu;
     }
+
+    public CPU getAllCpus() {
+        String sql = "SELECT (ArtNr,Manufacturer,ArtName,Price,ArtCount,Cores,Threads,Frequenzy,Turbo,Socket,TDP) FROM Article INNER JOIN Processor ON Article.ArtNr = Processor.ArtNr)";
+        Vector<CPU> cpus = new Vector<CPU>();
+        try (Connection conn = this.connect();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                CPU newCpu = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"));
+                cpus.add(newCpu);
+            }
+        }
+    }
+        catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+        return cpus;
+}
 }
