@@ -23,7 +23,7 @@
 
   <filter-mapping>
     <filter-name>Jersey</filter-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/tes/*</url-pattern>
   </filter-mapping>
 
 </web-app>
