@@ -69,118 +69,12 @@
 <!-- !Navbar -->
     <div class="platzhalter"></div>
 
-<!--<table class="table">
-    
-    <tr>    
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Athlon_200GE.jpg" class="pic"></a></th>
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"></a></th>
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic"></a></th>
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1800X.jpg" class="pic"></a></th>
-    </tr>
-    
-    <tr>
-        <td class="padtext"><a href="Detail.html">AMD Athlon 200GE</a><br>Preis: 200 Euro<br>Details: 4 Kerne, 3GHz</td>
-        <td class="padtext"><a href="Detail.html">AMD Ryzen 1300X</a><br>Preis:300 Euro</td>
-        <td class="padtext"><a href="Detail.html">AMD Ryzen 1600X</a><br>Preis:400 Euro</td>
-        <td class="padtext"><a href="Detail.html">AMD Ryzen 1800X</a><br>Preis:500 Euro</td>
-    
-    </tr>
-    
-        <tr>    
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Athlon_200GE.jpg" class="pic"></a></th>
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic"></a></th>
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic"></a></th>
-        <th class="padpic"><a href="Detail.html"><img src="Pictures/AMD_Ryzen_1800X.jpg" class="pic"></a></th>
-    </tr>
-    
-    <tr>
-        <td class="padtext"><a href="Detail.html">AMD Athlon 200GE</a><br>Preis: 200 Euro</td>
-        <td class="padtext"><a href="Detail.html">AMD Ryzen 1300X</a><br>Preis:300 Euro</td>
-        <td class="padtext"><a href="Detail.html">AMD Ryzen 1600X</a><br>Preis:400 Euro</td>
-        <td class="padtext"><a href="Detail.html">AMD Ryzen 1800X</a><br>Preis:500 Euro</td>
-    
-    </tr>
 
 
 
+<div id="ziel">
 
-</table>
-
--->
-
-<div class="row">
-  <div class="col-sm-4 col-md-4">
-    <div class="thumbnail padpic">
-      <img src="Pictures/AMD_Athlon_200GE.jpg" class="pic">
-      <div class="caption">
-        <h3>AMD 200GE</h3>
-        <p>Preis: 500 Euro<br>Takt: 3GHz</p>
-        <p><a href="Detail.html" class="btn btn-primary" role="button">Zum Kauf</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4 col-md-4">
-    <div class="thumbnail padpic">
-      <img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic">
-      <div class="caption">
-        <h3>AMD Ryzen 1300X</h3>
-        <p>Preis: 600 Euro<br>Takt: 4GHz</p>
-        <p><a href="Detail.html" class="btn btn-primary" role="button">Zum Kauf</a></p>
-      </div>
-    </div>
-  </div>
-    
-    
-  <div class="col-sm-4 col-md-4">
-    <div class="thumbnail padpic">
-      <img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic">
-      <div class="caption">
-        <h3>AMD Ryzen 1600X</h3>
-        <p>Preis: 700 Euro<br>Takt: 5GHz</p>
-        <p><a href="Detail.html" class="btn btn-primary" role="button">Zum Kauf</a></p>
-      </div>
-    </div>
-  </div>
-    
-</div>   
-    <hr class="featurette-divider">
-
-<div class="row">
-  <div class="col-sm-4 col-md-4">
-    <div class="thumbnail padpic">
-      <img src="Pictures/AMD_Athlon_200GE.jpg" class="pic">
-      <div class="caption">
-        <h3>AMD 200GE</h3>
-        <p>Preis: 500 Euro<br>Takt: 3GHz</p>
-        <p><a href="Detail.html" class="btn btn-primary" role="button">Zum Kauf</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4 col-md-4">
-    <div class="thumbnail padpic">
-      <img src="Pictures/AMD_Ryzen_1300X.jpg" class="pic">
-      <div class="caption">
-        <h3>AMD Ryzen 1300X</h3>
-        <p>Preis: 600 Euro<br>Takt: 4GHz</p>
-        <p><a href="Detail.html" class="btn btn-primary" role="button">Zum Kauf</a></p>
-      </div>
-    </div>
-  </div>
-    
-    
-  <div class="col-sm-4 col-md-4">
-    <div class="thumbnail padpic">
-      <img src="Pictures/AMD_Ryzen_1600X.jpg" class="pic">
-      <div class="caption">
-        <h3>AMD Ryzen 1600X</h3>
-        <p>Preis: 700 Euro<br>Takt: 5GHz</p>
-        <p><a href="Detail.html" class="btn btn-primary" role="button">Zum Kauf</a></p>
-      </div>
-    </div>
-  </div>
-</div>    
+</div>
 
 
 <!--Produktliste-->   
@@ -268,9 +162,9 @@
         $(document).ready(function() {
 
             console.log("Document ready, binding button");
-
+            $("#ziel").text("");
                     $.ajax({
-                        url: "/cpus",
+                        url: "cpus",
                         method: "GET",
                         dataType: "json"
                     })
@@ -284,7 +178,7 @@
                             $("#ziel").text("Es ist ein Fehler aufgetreten");
                         });
         });
-        
+
     </script>
     
 </body>
