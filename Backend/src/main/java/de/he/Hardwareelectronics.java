@@ -32,7 +32,7 @@ public class Hardwareelectronics {
     }
 
     @GET
-    @Path("Cpus/{pathID}")
+    @Path("cpus/{pathID}")
     // Tell Jersey we want to return JSON
     @Produces(MediaType.APPLICATION_JSON)
     public Response cpuJSON(@PathParam("pathID") String strID) throws Exception {
