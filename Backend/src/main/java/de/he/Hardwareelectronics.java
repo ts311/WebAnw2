@@ -62,16 +62,4 @@ public class Hardwareelectronics {
         //return Response.status(200).entity(cpus).build();
         return Response.status(Response.Status.OK).entity(cpus).build();
     }
-
-    //only test until joels method is done
-    public Vector<CPU> getAllCpus() {
-        //Aufruf von Joels methode um die objekte aus der db zu ziehen
-        CPU cpus = new CPU(120, 1, "AMD", "Ryzen 6", 12, 4, 2, 1000, 1, "AM4", 2);
-        CPU cpu = new CPU(120, 1, "AMD", "Ryzen 6", 12, 4, 2, 1000, 1, "AM4", 2);
-        //String header = "<html>Hallo Welt!</html>";
-        Vector cpuu = new Vector<CPU>();
-        cpuu.add(cpus);
-        cpuu.add(cpus);
-        return cpuu;
-    }
 }
