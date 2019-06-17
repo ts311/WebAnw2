@@ -73,7 +73,7 @@
 <div class="row" id="pasteMe">
     <div class="col-sm-4 col-md-4" id="copyMe">
         <div class="thumbnail padpic">
-            <img src="Pictures/AMD_Athlon_200GE.jpg" class="pic">
+            <img src="" class="pic", id="pict">
             <div class="caption">
                 <h3 id="name"></h3>
                 <p id="price"></p>
@@ -195,6 +195,7 @@
                                     document.getElementById("pasteMe").appendChild(cln);
                                 }
                                 document.getElementById("sub").value = JSON.stringify(response[i].artNr);
+                                document.getElementById("pict").src = JSON.stringify(response[i].bild)
                                 $("#name").text(JSON.stringify(response[i].manufact + " " + response[i].artName));
                                 $("#price").text(JSON.stringify(response[i].price + "€"));
                                 $("#stock").text(JSON.stringify(response[i].artCount + " Stück auf Lager"))
