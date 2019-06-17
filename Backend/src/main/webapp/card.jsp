@@ -84,25 +84,12 @@
         </thead>
         
         <tr>
-                <td id="position">1</td>
-                <td id="product">Grafikkarte</td>
-                <td id="count">2</td>
-                <td id="price">200€</td>
+                <td id="position"></td>
+                <td id="product"></td>
+                <td id="count"></td>
+                <td id="price"></td>
         </tr>
         
-        <tr>
-                <td>1</td>
-                <td>Grafikkarte</td>
-                <td>2</td>
-                <td>200€</td>
-        </tr>
-        
-        <tr>
-                <td>1</td>
-                <td>Grafikkarte</td>
-                <td>2</td>
-                <td>200€</td>
-          </tr>
   </table>
 </div>    
     <br><br>
