@@ -55,7 +55,7 @@ public class SQLite {
     }
 
     public int insertCPU(CPU cpu) {
-        String sqlArt = "INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (?,?,?,?,?,?,?)";
+        String sqlArt = "INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount,Description,Bild) VALUES (?,?,?,?,?,?,?)";
         String sqlCPU = "INSERT INTO Processor(ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (?,?,?,?,?,?,?)";
         try (Connection conn = this.connect();
              PreparedStatement psArt = conn.prepareStatement(sqlArt);

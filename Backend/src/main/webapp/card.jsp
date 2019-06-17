@@ -84,10 +84,10 @@
         </thead>
         
         <tr>
-                <td>1</td>
-                <td>Grafikkarte</td>
-                <td>2</td>
-                <td>200€</td>
+                <td id="position">1</td>
+                <td id="product">Grafikkarte</td>
+                <td id="count">2</td>
+                <td id="price">200€</td>
         </tr>
         
         <tr>
@@ -266,4 +266,55 @@
 <!-- Footer -->
   
 </body>
+
+<script>
+    $(document).ready(function() {
+
+        console.log("Document ready, binding button");
+        $("#ziel").text("");
+        $.ajax({
+            url: "card",
+            method: "GET",
+            dataType: "json"
+        })
+            .done(function(response) {
+            console.log(response);
+            var i, k;
+            k = 0;
+            for (i = 0; i < response.length; i++) {
+
+            }
+
+            if (k != 1) {
+                console.log("passt")
+                var itm = document.getElementById("copyMe");
+                var cln = itm.cloneNode(true);
+                document.getElementById("pasteMe").appendChild(cln);
+
+                document.getElementById("sub").value = JSON.stringify(response[i].artNr);
+                $("#position").text(JSON.stringify(response[i]));
+                $("#name").text(JSON.stringify(response[i].artname));
+                $("#count").text(JSON.stringify(response[i]));
+                $("#price").text(JSON.stringify(response[i].price +"€"));
+            }
+        }
+        )}
+
+            .fail(function(jqXHR, statusText, error) {
+                var errorMsg = "Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText;
+                console.log(errorMsg);
+                $("#ziel").text("Es ist ein Fehler aufgetreten");
+            });
+
+
+
+    }
+
+
+
+</script>
+
+
+
+
 </html>

@@ -69,7 +69,7 @@ public class Article {
     }
 
     public String getBild() { 
-        return this.bild;
+        return bild;
     }
 
     public void setBild(String bild) { 
