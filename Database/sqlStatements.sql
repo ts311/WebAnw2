@@ -123,21 +123,21 @@ Firstname TEXT NOT NULL,
 Lastname TEXT NOT NULL,
 Adress TEXT NOT NULL,
 City TEXT NOT NULL
-)
+);
 
-INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (1,'AMD', 'Athlon 200GE', 42.00, 10, 'TestTextTestText', '../Backend/src/main/webapp/Pictures');
-INSERT INTO Processor(ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES ( 1,2, 4, 3.20, 4.50, 'So.AM4', 35 );
+INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (1,'AMD', 'Athlon 200GE', 42.00, 10, 'beschreibung athlon 200GE', '../Backend/src/main/webapp/Pictures');
+INSERT INTO Processor(ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES ( 1,2, 4, 3.20, 4.50, 'So.AM4', 35);
 
-INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description) VALUES (2,'AMD', 'Ryzen 1300X', 84.90, 6);
+INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (2,'AMD', 'Ryzen 1300X', 84.90, 6, 'Beschreibung ryzen 13000X', '/fix/den/pfad/tobi');
 INSERT INTO Processor(ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (2,4, 4, 3.40, 3.70, 'So.AM4', 65);
 
-INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description) VALUES (3, 'AMD', '1600X', 124.00, 4);
+INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (3, 'AMD', '1600X', 124.00, 4, 'Beschreibung amd 1600X', '/och/jungggens');
 INSERT INTO Processor (ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (3, 6, 12, 3.60, 4.00, 'So.AM4', 95 );
 
-INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description) VALUES (4, 'AMD', '1800X', 220.00, 5);
+INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (4, 'AMD', '1800X', 220.00, 5, 'Beschreibung amd 1800X', '/du/lauch');
 INSERT INTO Processor (ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES(4, 8, 16, 3.60, 4.00, 'So.AM4', 95 );
 
-INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description) VALUES (5, 'AMD', '2200G', 85.00, 3);
+INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (5, 'AMD', '2200G', 85.00, 3, 'Beschreibung 2200G', '/kannst/mit/zahlen');
 INSERT INTO Processor (ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (5, 4, 4, 3.50, 3.70, 'So.AM4', 65 );
 
-INSERT INTO CustomerDatas(CNR, Firstname, Lastname, Adress, City) VALUES (1,'tobsi@gmx.de', 'Fälix', 'JoEl', 'Poststraße 8', 'Ebingen' );
+INSERT INTO CustomerDatas(CNR, Email, Firstname, Lastname, Adress, City) VALUES (1,'tobsi@gmx.de', 'Fälix', 'JoEl', 'Poststraße 8', 'Ebingen' );
