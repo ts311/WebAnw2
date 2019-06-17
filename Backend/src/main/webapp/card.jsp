@@ -89,7 +89,7 @@
                 <td id="count"></td>
                 <td id="price"></td>
         </tr>
-        
+
   </table>
 </div>    
     <br><br>
