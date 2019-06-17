@@ -141,6 +141,6 @@ Höchste Effizienz. ', '../Backend/src/main/webapp/Pictures/AMD_Ryzen_1800X.jpg'
 INSERT INTO Processor (ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES(4, 8, 16, 3.60, 4.00, 'So.AM4', 95 );
 
 INSERT INTO Article(ArtNr,Manufacturer,ArtName,Price,ArtCount, Description, Bild) VALUES (5, 'AMD', 'Ryzen 2200G', 85.00, 3, 'AMD SenseMI Technologie Mit der AMD SenseMI-Technologie nutzt Ryzen™ echte Maschinenintelligenz, um die Leistung noch weiter zu optimieren.‡ Weitere Infos AMD Ryzen Master AMD Ryzen™ Master Dienstprogramm Das unkomplizierte und leistungsstarke Programm zum Übertakten der AMD Ryzen™ Prozessoren Weitere Infos Enmotus FuzeDrive™ für AMD Ryzen™ Enmotus FuzeDrive™ für AMD Ryzen™ Beschleunigen Sie Ihren PC mit einer schnelleren, intelligenteren und einfacheren Speichertechnologie. Exklusiv für AMD Ryzen™Desktop-Prozessoren ', '../Backend/src/main/webapp/Pictures/AMD_Ryzen_2200G.jpg');
-INSERT INTO Processor (ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (5, 4, 4, 3.50, 3.70, 'So.AM4', 65 );
+INSERT INTO Processor (ArtNr,Cores,Threads,Frequenzy,Turbo,Socket,TDP) VALUES (5, 4, 4, 3.50, 3.70, 'So.AM4', 65);
 
 INSERT INTO CustomerDatas(CNR, Email, Firstname, Lastname, Adress, City) VALUES (1,'tobsi@gmx.de', 'Fälix', 'JoEl', 'Poststraße 8', 'Ebingen' );
