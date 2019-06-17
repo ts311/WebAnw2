@@ -147,20 +147,7 @@
     <div>
       <hr class="featurette-divider">
       <h2>Produktbeschreibung</h2>
-      <p>Mit der zweiten Generation von RYZEN™ bringt AMD eine neue Generation von Prozessoren an dem Start, die Sie vollgepackt mit modernster und innovativer Technologien, 
-        sofort in ihrem Bann ziehen wird.<br>Die 12 Nanometer Prozessortechnologie ist eine technologische Meisterleistung und maßgeblich für die enorme Leistungssteigerung 
-        verantwortlich. Wenn Sie bisher der Meinung waren, sie wissen was unglaubliche Gaming-Erlebnisse sind, dann wird sie die Leistung des RYZEN™ 5 2600X umhauen und mit 
-        einem Schlag in neue Sphären führen. Gaming der Extraklasse ist bedeutet! Ein weiterer Leistungsbringer ist SenseMI. Die Kombination aus Precision Boost und der 
-        XFR 2 Technologie verhelfen der CPU zur künstlichen Intelligenz. So erkennt der RYZEN™ 5 2600X, wann eine intensivere Kühlung erforderlich ist. Aber das ist 
-        noch nicht alles. Wird das System durch anspruchsvolle Aufgaben überdurchschnittlich hoch belastet, so ist der neue RYZEN™ auch selbstständig dazu in der 
-        Lage zu erkennen, dass mehr Leistung erforderlich ist. Diese wird dann kurzerhand bereitgestellt. Ein eigenes Nervensystem, wenn man so will.<br>
-        Wer bereits im Besitz eines Mainboards aus der AMD 400-Reihe ist, der muss auch keine teuren Neuanschaffungen befürchten, da diese bereits mit den neuen 
-        Desktop-Prozessoren kompatibel sind. Hierbei ist Precision Boost Overdrive ein treuer Wegbegleiter und sorgt für eine noch stärkere Leistung. Kompatibel 
-        sind aber nicht nur die Mainboards aus der AMD 400-Reihe, sondern auch die Boards aus der AMD 300-Reihe können mit den RYZEN™ Modellen der zweiten Generation 
-        betrieben werden. Wobei eine Erneuerung der Firmware, im Form eines (BIOS)-Updates notwendig ist.<br>Dieser intelligente Prozessor ist leistungsfähiger als jemals zuvor. 
-        Der neue RYZEN™ der zweiten Generation wird Sie durchweg begeistern.<br>***ACHTUNG:****<br>Für die Verwendung des Prozessors in Verbindung mit AM4-Mainboards mit 
-        300er-Chipsatz ist ein BIOS-Update notwendig. Bitte prüfen Sie die Kompatibilität auf den Herstellerseiten. Beim Kauf eines Mainboards bieten wir optional eine 
-        BIOS-Aktualisierung an und bringen die Plattform auf dem neuesten Stand.</p>
+      <p id="prod"></p>
     </div>
     <!--Technische Daten-->
     <div class="width-100">
@@ -314,7 +301,8 @@
                 $("#frequency").text(JSON.stringify(response.frequency + "/" + response.turbo));
                 $("#socket").text(JSON.stringify(response.socket));
                 $("#tdp").text(JSON.stringify(response.tdp));
-                $("#stock").text(JSON.stringify(response.artCount + " Stück auf Lager"))
+                $("#stock").text(JSON.stringify(response.artCount + " Stück auf Lager"));
+                $("#prod").text(JSON.stringify(response.description))
             })
             .fail(function(jqXHR, statusText, error) {
                 var errorMsg = "Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText;

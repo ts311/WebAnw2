@@ -65,8 +65,8 @@ public class SQLite {
             psArt.setString(3, cpu.getArtName());
             psArt.setFloat(4, cpu.getPrice());
             psArt.setInt(5, cpu.getArtCount());
-            psArt.setInt(6, cpu.getDescription());
-            psArt.setInt(7, cpu.getBild());
+            psArt.setString(6, cpu.getDescription());
+            psArt.setString(7, cpu.getBild());
 
             psCPU.setInt(1, cpu.getArtNr());
             psCPU.setInt(2, cpu.getCore());
@@ -99,7 +99,7 @@ public class SQLite {
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
                 if (rs.getInt("ArtNr") == artNr) {
-                    CPU cpu1 = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getDescription("Description"), rs.getBild("Picture"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"), rs.getString("description"), rs.getString("bild"));
+                    CPU cpu1 = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"), rs.getString("description"), rs.getString("bild"));
                     cpu = cpu1;
                     break;
                 }
@@ -120,7 +120,7 @@ public class SQLite {
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
-                CPU newCpu = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getDescription("Description"), rs.getBild("Picture"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"), rs.getString("decription"), rs.getString("bild"));
+                CPU newCpu = new CPU(rs.getFloat("Price"), rs.getInt("ArtNr"), rs.getString("Manufacturer"), rs.getString("ArtName"), rs.getInt("ArtCount"), rs.getInt("Cores"), rs.getInt("Threads"), rs.getFloat("Frequenzy"), rs.getFloat("Turbo"), rs.getString("Socket"), rs.getInt("TDP"), rs.getString("description"), rs.getString("bild"));
                 cpus.add(newCpu);
             }
         }
