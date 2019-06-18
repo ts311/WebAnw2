@@ -6,16 +6,16 @@ public class CustomerData {
     protected String Email;
     protected String firstname;
     protected String lastname;
-    protected String adress;
+    protected String address;
     protected String city;
 
 
-    public CustomerData(int CNR, String Email, String firstname, String lastname, String adress, String city) {
+    public CustomerData(int CNR, String Email, String firstname, String lastname, String address, String city) {
         this.CNR = CNR;
         this.Email = Email;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.adress = adress;
+        this.address = address;
         this.city = city;
     }
     public int getCNR () { return CNR; }
@@ -34,12 +34,12 @@ public class CustomerData {
 
     public void setLastname( String lastname ) { this.lastname = lastname; }
 
-    public String getAdress() { return this.adress; }
+    public String getAddress() { return this.address; }
 
-    public void setAdress(String adress) { this.adress = adress; }
+    public void setAddress(String adress) { this.address = adress; }
 
     public String getCity() { return this.city; }
 
-    public void setCity(String city) { this.adress = adress; }
+    public void setCity(String city) { this.city = city; }
 
 }
