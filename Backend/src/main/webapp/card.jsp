@@ -114,40 +114,48 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="email">Email:</label>
             <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
             </div>
         </div>
         
         <div class="form-group">
             <label class="control-label col-sm-2" for="pwd">Password:</label>
             <div class="col-sm-10">          
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pwd">
             </div>
         </div>
 
         <div class="form-group">
             <label class="control-label col-sm-2">Name:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="Name" name="email">
+                <input type="input" class="form-control" placeholder="Firstname" name="email">
             </div>
-        </div>        
-        
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2">Name:</label>
+            <div class="col-sm-10">
+                <input type="input" class="form-control" placeholder="Lastname" name="email">
+            </div>
+        </div>
+
+
         <div class="form-group">
             <label class="control-label col-sm-2" >Lieferadresse:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="Lieferadresse" name="email">
+                <input type="input" class="form-control" placeholder="Adress" name="email">
             </div>
         </div>
         
         <div class="form-group">
             <label class="control-label col-sm-2" >Ort:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="Ort" name="email">
+                <input type="input" class="form-control" placeholder="City" name="email">
             </div>
         </div>        
         
         <div class="form-group">
-            <label class="control-label col-sm-2" >Bezahloption</label>
+            <label class="control-label col-sm-2" >Payment</label>
             <select class="form-control col-sm-10">
                 <option>Paypal</option>
                 <option>VISA</option>
@@ -254,6 +262,20 @@
   
 </body>
 
+<script>
+
+    $(document).ready(function(){
+
+        
+
+
+
+
+
+    })
+
+
+</script>
 
 
 
