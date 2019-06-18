@@ -114,21 +114,21 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="email">Email:</label>
             <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                <input id="Email" type="email" class="form-control" id="email" placeholder="Email" name="email">
             </div>
         </div>
         
         <div class="form-group">
             <label class="control-label col-sm-2">Firstname:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="Firstname" name="email">
+                <input id ="Firstname" type="input" class="form-control" placeholder="Firstname" name="email">
             </div>
         </div>
 
         <div class="form-group">
             <label class="control-label col-sm-2">Lastname:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="Lastname" name="email">
+                <input id ="Lastname" type="input" class="form-control" placeholder="Lastname" name="email">
             </div>
         </div>
 
@@ -136,20 +136,20 @@
         <div class="form-group">
             <label class="control-label col-sm-2" >Address:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="Address" name="email">
+                <input id ="Address" type="input" class="form-control" placeholder="Address" name="email">
             </div>
         </div>
         
         <div class="form-group">
             <label class="control-label col-sm-2" >City:</label>
             <div class="col-sm-10">
-                <input type="input" class="form-control" placeholder="City" name="email">
+                <input id ="City" type="input" class="form-control" placeholder="City" name="email">
             </div>
         </div>        
         
         <div class="form-group">
             <label class="control-label col-sm-2" >Payment</label>
-            <select class="form-control col-sm-10">
+            <select id ="Payment" class="form-control col-sm-10">
                 <option>Paypal</option>
                 <option>VISA</option>
                 <option>Master</option>
@@ -255,5 +255,31 @@
   
 </body>
 
+<script>
 
+    $(document).ready(function () {
+
+       var email = document.getElementById("#Email").value;
+       var fn = document.getElementById("#Firstname").value;
+
+       var ln = document.getElementById("#Lastname").value;
+       var addr = document.getElementById("#Address").value;
+       var city= document.getElementById("#City").value;
+       var paym = document.getElementById("#Payment").value;
+
+        let customer = {
+            email: email.val(),
+            fn: fn.val(),
+            ln: ln.val(),
+            addr: addr.val(),
+            city: city.val(),
+            paym: paym.val(),
+        };
+
+        $.post("", customer);
+
+    });
+
+
+</script>
 </html>
