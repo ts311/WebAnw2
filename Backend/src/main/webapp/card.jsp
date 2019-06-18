@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <%@ page contentType="text/html; charset=UTF-8" %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tobias ist Schwuuuuul</title>
+    <title>Card</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
     <!-- Das neueste kompilierte und minimierte CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -254,52 +254,6 @@
   
 </body>
 
-<script>
-    $(document).ready(function() {
-
-        console.log("Document ready, binding button");
-        $("#ziel").text("");
-        $.ajax({
-            url: "card",
-            method: "GET",
-            dataType: "json"
-        })
-            .done(function(response) {
-            console.log(response);
-            var i, k;
-            k = 0;
-            for (i = 0; i < response.length; i++) {
-
-            }
-
-            if (k != 1) {
-                console.log("passt")
-                var itm = document.getElementById("copyMe");
-                var cln = itm.cloneNode(true);
-                document.getElementById("pasteMe").appendChild(cln);
-
-                document.getElementById("sub").value = JSON.stringify(response[i].artNr);
-                $("#position").text(JSON.stringify(response[i]));
-                $("#name").text(JSON.stringify(response[i].artname));
-                $("#count").text(JSON.stringify(response[i]));
-                $("#price").text(JSON.stringify(response[i].price +"€"));
-            }
-        }
-        )}
-
-            .fail(function(jqXHR, statusText, error) {
-                var errorMsg = "Response Code: " + jqXHR.status + " - Fehlermeldung: " + jqXHR.responseText;
-                console.log(errorMsg);
-                $("#ziel").text("Es ist ein Fehler aufgetreten");
-            });
-
-
-
-    }
-
-
-
-</script>
 
 
 

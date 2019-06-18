@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <%@ page contentType="text/html; charset=UTF-8" %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tobias ist Schwuuuuul</title>
+    <title>Detail</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
     <!-- Das neueste kompilierte und minimierte CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
