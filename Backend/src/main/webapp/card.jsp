@@ -121,14 +121,14 @@
         <div class="form-group">
             <label class="control-label col-sm-2">Firstname:</label>
             <div class="col-sm-10">
-                <input id ="Firstname" type="input" class="form-control" placeholder="Firstname" name="email">
+                <input id ="Firstname" type="input" class="form-control" placeholder="Firstname" name="firstname">
             </div>
         </div>
 
         <div class="form-group">
             <label class="control-label col-sm-2">Lastname:</label>
             <div class="col-sm-10">
-                <input id ="Lastname" type="input" class="form-control" placeholder="Lastname" name="email">
+                <input id ="Lastname" type="input" class="form-control" placeholder="Lastname" name="lastname">
             </div>
         </div>
 
@@ -136,7 +136,7 @@
         <div class="form-group">
             <label class="control-label col-sm-2" >Address:</label>
             <div class="col-sm-10">
-                <input id ="Address" type="input" class="form-control" placeholder="Address" name="email">
+                <input id ="Address" type="input" class="form-control" placeholder="Address" name="">
             </div>
         </div>
         

@@ -73,9 +73,8 @@
 <div class="row" id="pasteMe">
     <div class="col-sm-4 col-md-4" id="copyMe">
         <div class="thumbnail padpic">
-            <img src="" class="pic", id="pict">
-            <div class="caption">
-                <img id="picture">
+                <div class="caption">
+                <img id="picture" method="get">
                 <h3 id="name"></h3>
                 <p id="price"></p>
                 <p id="stock"></p>
@@ -164,7 +163,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 sec-color">© 2018 Copyright:
-    <a href="http://google.de"> HardwareElectronics.com</a>
+    <a href="http://google.de">HardwareElectronics.com</a>
   </div>
   <!-- Copyright -->
 
@@ -197,7 +196,7 @@
                                 }
                                 document.getElementById("sub").value = JSON.stringify(response[i].artNr);
 
-                                $("#picture").text(JSON.stringify(response[i].bild));
+                                $("#picture").text(JSON.stringify("src="+response[i].bild)+"");
                                 $("#name").text(JSON.stringify(response[i].manufact + " " + response[i].artName));
                                 $("#price").text(JSON.stringify(response[i].price + "€"));
                                 $("#stock").text(JSON.stringify(response[i].artCount + " Stück auf Lager"));

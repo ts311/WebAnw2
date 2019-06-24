@@ -67,14 +67,13 @@
 </nav>
 <!-- !Navbar -->
 
-
+<div class="platzhalter"></div>
 <div class="container">
 
     <h2 class="featurette-heading">Danke für Ihre Bestellung!</h2><h3><span class="text-muted">Bis zum nächsten Einkauf</span></h3>
 
 </div>
-<div class="platzhalter"></div>
-
+<hr class="featurette-divider">
 
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 primary-color">
